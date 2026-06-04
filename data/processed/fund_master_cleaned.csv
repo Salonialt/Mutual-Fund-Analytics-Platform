@@ -1,0 +1,201 @@
+amfi_code,scheme_name,fund_house,category,sub_category,risk_grade,launch_date,benchmark,aum_crores,exit_load_pct,lock_in_days
+100067,HDFC ETF Direct Plan Growth,HDFC,Other,ETF,Moderately High,2014-09-28,NIFTY ETF 100 TRI,3757.93,1.5,0
+100188,Aditya Birla FoF Direct Plan Growth,Aditya Birla,Other,FoF,High,2016-06-20,NIFTY FoF 100 TRI,1298.89,1.5,0
+100209,Aditya Birla Ultra Short Direct Plan Growth,Aditya Birla,Debt,Ultra Short,High,2015-12-04,NIFTY Ultra 100 TRI,918.5,0.5,0
+100329,SBI Aggressive Direct Plan Growth,SBI,Hybrid,Aggressive,Moderately High,2018-10-25,NIFTY Aggressive 100 TRI,251.75,0.0,0
+100431,HDFC Ultra Short Direct Plan Growth,HDFC,Debt,Ultra Short,Moderate,2016-04-11,NIFTY Ultra 100 TRI,1283.39,1.0,365
+100500,ICICI Prudential Aggressive Direct Plan Growth,ICICI Prudential,Hybrid,Aggressive,Low,2015-05-11,NIFTY Aggressive 100 TRI,1922.76,1.0,0
+100642,Axis ETF Direct Plan Growth,Axis,Other,ETF,Moderate,2017-02-04,NIFTY ETF 100 TRI,1149.06,0.5,0
+100711,Mirae Asset Corporate Bond Direct Plan Growth,Mirae Asset,Debt,Corporate Bond,Moderate,2010-04-02,NIFTY Corporate 100 TRI,2778.09,1.5,1095
+100875,Axis Short Duration Direct Plan Growth,Axis,Debt,Short Duration,High,2012-02-14,NIFTY Short 100 TRI,215.27,1.5,1095
+100952,Axis Retirement Direct Plan Growth,Axis,Solution Oriented,Retirement,Low,2013-03-13,NIFTY Retirement 100 TRI,1287.56,1.0,0
+101064,Nippon India Ultra Short Direct Plan Growth,Nippon India,Debt,Ultra Short,Very High,2010-09-14,NIFTY Ultra 100 TRI,1950.2,0.0,0
+101198,Nippon India Sectoral Direct Plan Growth,Nippon India,Equity,Sectoral,Moderate,2012-08-31,NIFTY Sectoral 100 TRI,114.65,0.5,0
+101243,ICICI Prudential Small Cap Direct Plan Growth,ICICI Prudential,Equity,Small Cap,Moderate,2019-06-18,NIFTY Small 100 TRI,702.35,1.0,0
+101394,Nippon India Balanced Advantage Direct Plan Growth,Nippon India,Hybrid,Balanced Advantage,Moderately High,2015-06-11,NIFTY Balanced 100 TRI,2358.38,1.5,1095
+101458,UTI Short Duration Direct Plan Growth,UTI,Debt,Short Duration,Moderately Low,2018-07-06,NIFTY Short 100 TRI,5298.51,1.5,0
+101580,Nippon India Retirement Direct Plan Growth,Nippon India,Solution Oriented,Retirement,Low,2013-04-21,NIFTY Retirement 100 TRI,683.31,1.5,0
+101677,Aditya Birla Retirement Direct Plan Growth,Aditya Birla,Solution Oriented,Retirement,Low,2011-09-30,NIFTY Retirement 100 TRI,1686.17,1.0,0
+101740,HDFC Children's Direct Plan Growth,HDFC,Solution Oriented,Children's,Low,2018-06-19,NIFTY Children's 100 TRI,1008.69,1.0,0
+101861,Nippon India ELSS Direct Plan Growth,Nippon India,Equity,ELSS,Low,2019-02-15,NIFTY ELSS 100 TRI,7686.01,1.5,1095
+101916,Aditya Birla Corporate Bond Direct Plan Growth,Aditya Birla,Debt,Corporate Bond,Low,2012-07-14,NIFTY Corporate 100 TRI,4269.66,0.5,0
+102061,Mirae Asset ETF Direct Plan Growth,Mirae Asset,Other,ETF,Moderately High,2017-06-14,NIFTY ETF 100 TRI,1004.62,0.0,365
+102185,Mirae Asset Children's Direct Plan Growth,Mirae Asset,Solution Oriented,Children's,Very High,2015-02-07,NIFTY Children's 100 TRI,685.2,1.5,0
+102279,Mirae Asset Aggressive Direct Plan Growth,Mirae Asset,Hybrid,Aggressive,Moderately High,2010-06-16,NIFTY Aggressive 100 TRI,1687.78,0.5,0
+102367,Aditya Birla Index Fund Direct Plan Growth,Aditya Birla,Other,Index Fund,Moderate,2012-10-04,NIFTY Index 100 TRI,304.59,0.0,365
+102484,Aditya Birla Retirement Direct Plan Growth,Aditya Birla,Solution Oriented,Retirement,Moderate,2014-09-15,NIFTY Retirement 100 TRI,13530.79,0.5,1095
+102589,Nippon India Small Cap Direct Plan Growth,Nippon India,Equity,Small Cap,Very High,2010-11-04,NIFTY Small 100 TRI,4003.97,0.5,365
+102673,UTI Children's Direct Plan Growth,UTI,Solution Oriented,Children's,Moderately Low,2018-02-15,NIFTY Children's 100 TRI,1208.6,1.0,0
+102739,DSP ETF Direct Plan Growth,DSP,Other,ETF,Very High,2016-07-17,NIFTY ETF 100 TRI,2772.58,1.0,0
+102836,Kotak Mahindra Mid Cap Direct Plan Growth,Kotak Mahindra,Equity,Mid Cap,Low,2014-01-23,NIFTY Mid 100 TRI,1245.19,1.0,0
+102981,SBI Sectoral Direct Plan Growth,SBI,Equity,Sectoral,Low,2016-05-28,NIFTY Sectoral 100 TRI,1942.96,0.0,1095
+103067,UTI Index Fund Direct Plan Growth,UTI,Other,Index Fund,High,2017-10-22,NIFTY Index 100 TRI,3994.34,0.5,0
+103193,SBI Short Duration Direct Plan Growth,SBI,Debt,Short Duration,High,2011-05-25,NIFTY Short 100 TRI,503.2,0.5,1095
+103291,ICICI Prudential ETF Direct Plan Growth,ICICI Prudential,Other,ETF,Very High,2011-02-28,NIFTY ETF 100 TRI,178.31,1.0,0
+103349,Nippon India Aggressive Direct Plan Growth,Nippon India,Hybrid,Aggressive,Moderately Low,2015-11-12,NIFTY Aggressive 100 TRI,3856.72,0.5,0
+103428,UTI Aggressive Direct Plan Growth,UTI,Hybrid,Aggressive,Moderately High,2010-07-29,NIFTY Aggressive 100 TRI,9279.31,0.0,0
+103563,Aditya Birla Aggressive Direct Plan Growth,Aditya Birla,Hybrid,Aggressive,Moderately High,2013-08-24,NIFTY Aggressive 100 TRI,967.28,1.5,365
+103671,Aditya Birla Multi Cap Direct Plan Growth,Aditya Birla,Equity,Multi Cap,Very High,2019-04-10,NIFTY Multi 100 TRI,410.7,0.0,0
+103725,Axis Retirement Direct Plan Growth,Axis,Solution Oriented,Retirement,Low,2019-07-31,NIFTY Retirement 100 TRI,4245.49,0.0,1095
+103883,Mirae Asset Aggressive Direct Plan Growth,Mirae Asset,Hybrid,Aggressive,Low,2011-07-28,NIFTY Aggressive 100 TRI,937.35,0.0,0
+103992,DSP Retirement Direct Plan Growth,DSP,Solution Oriented,Retirement,Very High,2013-07-30,NIFTY Retirement 100 TRI,648.4,1.0,0
+104018,Nippon India Children's Direct Plan Growth,Nippon India,Solution Oriented,Children's,Very High,2013-08-07,NIFTY Children's 100 TRI,312.95,0.5,0
+104145,ICICI Prudential Children's Direct Plan Growth,ICICI Prudential,Solution Oriented,Children's,Moderately Low,2019-04-22,NIFTY Children's 100 TRI,490.4,0.0,365
+104258,Nippon India Small Cap Direct Plan Growth,Nippon India,Equity,Small Cap,Moderately Low,2013-02-04,NIFTY Small 100 TRI,2261.84,0.5,0
+104307,Aditya Birla Sectoral Direct Plan Growth,Aditya Birla,Equity,Sectoral,Low,2018-05-23,NIFTY Sectoral 100 TRI,1765.76,1.5,0
+104481,Mirae Asset Multi Cap Direct Plan Growth,Mirae Asset,Equity,Multi Cap,High,2014-02-06,NIFTY Multi 100 TRI,492.83,0.0,0
+104524,DSP Conservative Direct Plan Growth,DSP,Hybrid,Conservative,High,2017-04-14,NIFTY Conservative 100 TRI,1331.68,1.5,0
+104657,Kotak Mahindra ETF Direct Plan Growth,Kotak Mahindra,Other,ETF,Moderately High,2012-11-19,NIFTY ETF 100 TRI,853.07,0.5,365
+104754,UTI Ultra Short Direct Plan Growth,UTI,Debt,Ultra Short,Low,2012-05-01,NIFTY Ultra 100 TRI,294.45,0.5,1095
+104820,SBI Multi Cap Direct Plan Growth,SBI,Equity,Multi Cap,High,2013-09-10,NIFTY Multi 100 TRI,1684.27,1.5,0
+104970,Axis Multi Cap Direct Plan Growth,Axis,Equity,Multi Cap,Moderately Low,2019-08-18,NIFTY Multi 100 TRI,528.54,1.5,365
+105074,SBI FoF Direct Plan Growth,SBI,Other,FoF,Moderate,2013-06-03,NIFTY FoF 100 TRI,2944.41,0.0,1095
+105100,SBI Conservative Direct Plan Growth,SBI,Hybrid,Conservative,Low,2011-11-30,NIFTY Conservative 100 TRI,1131.79,0.5,365
+105260,Aditya Birla Conservative Direct Plan Growth,Aditya Birla,Hybrid,Conservative,Moderately Low,2019-03-11,NIFTY Conservative 100 TRI,281.94,0.0,0
+105369,Kotak Mahindra Children's Direct Plan Growth,Kotak Mahindra,Solution Oriented,Children's,Moderately Low,2014-07-30,NIFTY Children's 100 TRI,1166.85,0.0,1095
+105484,Nippon India Children's Direct Plan Growth,Nippon India,Solution Oriented,Children's,Moderately High,2013-06-01,NIFTY Children's 100 TRI,3758.24,1.5,365
+105521,DSP Corporate Bond Direct Plan Growth,DSP,Debt,Corporate Bond,Very High,2019-09-19,NIFTY Corporate 100 TRI,926.78,1.0,0
+105689,Mirae Asset Multi Cap Direct Plan Growth,Mirae Asset,Equity,Multi Cap,Moderate,2016-12-22,NIFTY Multi 100 TRI,160.16,1.5,0
+105770,HDFC Retirement Direct Plan Growth,HDFC,Solution Oriented,Retirement,Moderately Low,2011-03-05,NIFTY Retirement 100 TRI,72.01,1.0,0
+105835,SBI ETF Direct Plan Growth,SBI,Other,ETF,Moderate,2011-02-09,NIFTY ETF 100 TRI,788.12,1.5,1095
+105977,SBI Gilt Direct Plan Growth,SBI,Debt,Gilt,Very High,2015-02-23,NIFTY Gilt 100 TRI,173.23,0.5,0
+106076,Mirae Asset Balanced Advantage Direct Plan Growth,Mirae Asset,Hybrid,Balanced Advantage,Moderate,2018-07-21,NIFTY Balanced 100 TRI,794.16,0.0,1095
+106110,HDFC Aggressive Direct Plan Growth,HDFC,Hybrid,Aggressive,Moderately High,2015-04-18,NIFTY Aggressive 100 TRI,6396.51,1.0,0
+106292,DSP Retirement Direct Plan Growth,DSP,Solution Oriented,Retirement,Moderately Low,2014-09-02,NIFTY Retirement 100 TRI,4790.36,0.0,365
+106346,ICICI Prudential ETF Direct Plan Growth,ICICI Prudential,Other,ETF,Very High,2012-02-20,NIFTY ETF 100 TRI,2711.44,0.0,0
+106490,HDFC Multi Cap Direct Plan Growth,HDFC,Equity,Multi Cap,Moderately High,2011-11-28,NIFTY Multi 100 TRI,3733.28,0.0,0
+106543,Kotak Mahindra Aggressive Direct Plan Growth,Kotak Mahindra,Hybrid,Aggressive,Moderately High,2017-12-14,NIFTY Aggressive 100 TRI,181.01,1.0,1095
+106692,ICICI Prudential Retirement Direct Plan Growth,ICICI Prudential,Solution Oriented,Retirement,High,2012-05-19,NIFTY Retirement 100 TRI,141.0,0.5,0
+106731,Kotak Mahindra FoF Direct Plan Growth,Kotak Mahindra,Other,FoF,Moderately Low,2018-07-05,NIFTY FoF 100 TRI,245.43,1.0,0
+106837,UTI Liquid Direct Plan Growth,UTI,Debt,Liquid,Moderately Low,2013-11-14,NIFTY Liquid 100 TRI,135.07,1.0,0
+106971,Aditya Birla Retirement Direct Plan Growth,Aditya Birla,Solution Oriented,Retirement,Very High,2018-10-11,NIFTY Retirement 100 TRI,2192.39,1.0,365
+107091,UTI Balanced Advantage Direct Plan Growth,UTI,Hybrid,Balanced Advantage,Moderately Low,2011-01-23,NIFTY Balanced 100 TRI,2452.26,1.0,0
+107163,Kotak Mahindra ETF Direct Plan Growth,Kotak Mahindra,Other,ETF,Low,2010-11-22,NIFTY ETF 100 TRI,1192.34,1.0,0
+107297,ICICI Prudential Mid Cap Direct Plan Growth,ICICI Prudential,Equity,Mid Cap,Moderately Low,2018-10-13,NIFTY Mid 100 TRI,258.08,1.0,0
+107329,SBI ETF Direct Plan Growth,SBI,Other,ETF,High,2015-01-13,NIFTY ETF 100 TRI,973.04,1.0,365
+107452,ICICI Prudential ETF Direct Plan Growth,ICICI Prudential,Other,ETF,Moderately Low,2011-09-15,NIFTY ETF 100 TRI,2762.92,1.0,0
+107503,DSP Aggressive Direct Plan Growth,DSP,Hybrid,Aggressive,Low,2018-08-15,NIFTY Aggressive 100 TRI,3655.05,0.5,0
+107690,DSP Conservative Direct Plan Growth,DSP,Hybrid,Conservative,Moderately Low,2013-08-02,NIFTY Conservative 100 TRI,857.82,0.0,0
+107742,HDFC Gilt Direct Plan Growth,HDFC,Debt,Gilt,Moderate,2010-01-29,NIFTY Gilt 100 TRI,147.01,0.0,0
+107802,UTI Balanced Advantage Direct Plan Growth,UTI,Hybrid,Balanced Advantage,High,2018-01-03,NIFTY Balanced 100 TRI,1853.28,0.0,1095
+107910,UTI Aggressive Direct Plan Growth,UTI,Hybrid,Aggressive,High,2014-06-29,NIFTY Aggressive 100 TRI,321.46,1.5,0
+108089,Nippon India Conservative Direct Plan Growth,Nippon India,Hybrid,Conservative,Moderate,2016-07-20,NIFTY Conservative 100 TRI,1215.57,1.0,1095
+108124,UTI Small Cap Direct Plan Growth,UTI,Equity,Small Cap,Moderate,2014-07-18,NIFTY Small 100 TRI,4504.99,1.0,365
+108200,Mirae Asset ETF Direct Plan Growth,Mirae Asset,Other,ETF,Moderate,2011-12-09,NIFTY ETF 100 TRI,99.83,1.5,0
+108320,ICICI Prudential Retirement Direct Plan Growth,ICICI Prudential,Solution Oriented,Retirement,Moderately High,2011-09-23,NIFTY Retirement 100 TRI,1510.42,0.5,0
+108433,Mirae Asset Conservative Direct Plan Growth,Mirae Asset,Hybrid,Conservative,High,2018-07-08,NIFTY Conservative 100 TRI,320.97,1.0,365
+108550,ICICI Prudential Conservative Direct Plan Growth,ICICI Prudential,Hybrid,Conservative,Moderately High,2019-02-13,NIFTY Conservative 100 TRI,187.51,0.5,365
+108653,Axis Sectoral Direct Plan Growth,Axis,Equity,Sectoral,Moderately High,2010-07-13,NIFTY Sectoral 100 TRI,654.42,1.0,1095
+108718,Aditya Birla ETF Direct Plan Growth,Aditya Birla,Other,ETF,Moderately Low,2011-06-10,NIFTY ETF 100 TRI,2575.78,0.0,0
+108826,Aditya Birla Index Fund Direct Plan Growth,Aditya Birla,Other,Index Fund,Very High,2016-01-01,NIFTY Index 100 TRI,34.03,0.5,365
+108980,HDFC Liquid Direct Plan Growth,HDFC,Debt,Liquid,Low,2010-03-04,NIFTY Liquid 100 TRI,5039.78,0.5,0
+109005,Nippon India Balanced Advantage Direct Plan Growth,Nippon India,Hybrid,Balanced Advantage,High,2011-08-19,NIFTY Balanced 100 TRI,3506.9,0.5,1095
+109183,SBI FoF Direct Plan Growth,SBI,Other,FoF,High,2015-07-16,NIFTY FoF 100 TRI,1036.46,0.0,0
+109261,Nippon India Aggressive Direct Plan Growth,Nippon India,Hybrid,Aggressive,Moderately High,2018-10-22,NIFTY Aggressive 100 TRI,3542.71,0.0,1095
+109317,HDFC Large Cap Direct Plan Growth,HDFC,Equity,Large Cap,Very High,2019-11-03,NIFTY Large 100 TRI,713.43,1.5,0
+109471,Axis Index Fund Direct Plan Growth,Axis,Other,Index Fund,Moderately High,2016-08-11,NIFTY Index 100 TRI,1160.58,1.0,0
+109511,ICICI Prudential Multi Cap Direct Plan Growth,ICICI Prudential,Equity,Multi Cap,Moderate,2016-05-27,NIFTY Multi 100 TRI,4566.79,1.5,365
+109653,Axis Sectoral Direct Plan Growth,Axis,Equity,Sectoral,Very High,2015-11-20,NIFTY Sectoral 100 TRI,1272.21,0.0,0
+109701,Axis Gilt Direct Plan Growth,Axis,Debt,Gilt,Very High,2013-03-27,NIFTY Gilt 100 TRI,447.2,1.0,0
+109820,Axis Multi Cap Direct Plan Growth,Axis,Equity,Multi Cap,Moderate,2017-03-19,NIFTY Multi 100 TRI,917.5,1.0,1095
+109940,UTI Conservative Direct Plan Growth,UTI,Hybrid,Conservative,High,2013-05-18,NIFTY Conservative 100 TRI,2140.16,1.5,0
+110039,HDFC Liquid Direct Plan Growth,HDFC,Debt,Liquid,Very High,2011-05-24,NIFTY Liquid 100 TRI,3353.87,0.0,0
+110106,UTI Conservative Direct Plan Growth,UTI,Hybrid,Conservative,Low,2014-03-08,NIFTY Conservative 100 TRI,129.37,0.5,0
+110219,Kotak Mahindra Large Cap Direct Plan Growth,Kotak Mahindra,Equity,Large Cap,Very High,2017-01-15,NIFTY Large 100 TRI,1781.71,1.5,0
+110382,Axis Large Cap Direct Plan Growth,Axis,Equity,Large Cap,Very High,2014-03-15,NIFTY Large 100 TRI,319.89,1.0,1095
+110405,Axis Corporate Bond Direct Plan Growth,Axis,Debt,Corporate Bond,Very High,2015-09-18,NIFTY Corporate 100 TRI,552.98,0.5,1095
+110504,DSP Conservative Direct Plan Growth,DSP,Hybrid,Conservative,Moderately Low,2018-06-24,NIFTY Conservative 100 TRI,1306.91,1.5,365
+110681,Axis Children's Direct Plan Growth,Axis,Solution Oriented,Children's,Moderate,2014-09-08,NIFTY Children's 100 TRI,1225.93,0.0,0
+110789,SBI Conservative Direct Plan Growth,SBI,Hybrid,Conservative,High,2016-11-22,NIFTY Conservative 100 TRI,2038.79,0.0,0
+110819,SBI Retirement Direct Plan Growth,SBI,Solution Oriented,Retirement,Low,2012-11-01,NIFTY Retirement 100 TRI,2119.29,0.5,0
+110951,Mirae Asset Sectoral Direct Plan Growth,Mirae Asset,Equity,Sectoral,Low,2012-02-11,NIFTY Sectoral 100 TRI,1649.14,1.0,0
+111007,Axis Corporate Bond Direct Plan Growth,Axis,Debt,Corporate Bond,Moderately High,2019-05-24,NIFTY Corporate 100 TRI,59.25,0.5,0
+111188,DSP Children's Direct Plan Growth,DSP,Solution Oriented,Children's,Moderately High,2019-02-07,NIFTY Children's 100 TRI,3772.23,0.5,365
+111289,ICICI Prudential Corporate Bond Direct Plan Growth,ICICI Prudential,Debt,Corporate Bond,High,2010-01-04,NIFTY Corporate 100 TRI,17.46,0.5,365
+111360,HDFC Corporate Bond Direct Plan Growth,HDFC,Debt,Corporate Bond,Moderately High,2010-04-14,NIFTY Corporate 100 TRI,353.76,0.5,0
+111488,Kotak Mahindra Index Fund Direct Plan Growth,Kotak Mahindra,Other,Index Fund,Moderately Low,2018-01-31,NIFTY Index 100 TRI,2496.04,0.0,365
+111585,Aditya Birla Corporate Bond Direct Plan Growth,Aditya Birla,Debt,Corporate Bond,High,2014-06-03,NIFTY Corporate 100 TRI,201.01,0.0,365
+111601,ICICI Prudential Corporate Bond Direct Plan Growth,ICICI Prudential,Debt,Corporate Bond,Low,2019-02-12,NIFTY Corporate 100 TRI,2056.41,0.5,1095
+111732,Nippon India Large Cap Direct Plan Growth,Nippon India,Equity,Large Cap,High,2013-12-10,NIFTY Large 100 TRI,249.72,0.5,365
+111880,Axis Children's Direct Plan Growth,Axis,Solution Oriented,Children's,Very High,2014-09-28,NIFTY Children's 100 TRI,1876.02,0.5,0
+111982,ICICI Prudential Multi Cap Direct Plan Growth,ICICI Prudential,Equity,Multi Cap,Moderately Low,2019-07-11,NIFTY Multi 100 TRI,1471.11,0.0,365
+112076,Aditya Birla Mid Cap Direct Plan Growth,Aditya Birla,Equity,Mid Cap,Very High,2015-04-23,NIFTY Mid 100 TRI,766.14,0.0,1095
+112175,DSP Children's Direct Plan Growth,DSP,Solution Oriented,Children's,Very High,2011-05-26,NIFTY Children's 100 TRI,945.59,1.0,0
+112249,SBI Index Fund Direct Plan Growth,SBI,Other,Index Fund,Moderately Low,2016-07-19,NIFTY Index 100 TRI,487.86,0.5,0
+112320,SBI Small Cap Direct Plan Growth,SBI,Equity,Small Cap,Low,2010-08-25,NIFTY Small 100 TRI,1533.45,1.0,0
+112432,ICICI Prudential Sectoral Direct Plan Growth,ICICI Prudential,Equity,Sectoral,Moderate,2013-11-08,NIFTY Sectoral 100 TRI,340.11,0.5,0
+112510,HDFC Children's Direct Plan Growth,HDFC,Solution Oriented,Children's,High,2013-07-21,NIFTY Children's 100 TRI,566.2,1.0,365
+112651,DSP Retirement Direct Plan Growth,DSP,Solution Oriented,Retirement,High,2017-03-18,NIFTY Retirement 100 TRI,1320.95,0.0,0
+112794,Kotak Mahindra Multi Cap Direct Plan Growth,Kotak Mahindra,Equity,Multi Cap,Moderate,2018-10-21,NIFTY Multi 100 TRI,3314.79,1.0,0
+112829,UTI Children's Direct Plan Growth,UTI,Solution Oriented,Children's,Moderately High,2016-11-08,NIFTY Children's 100 TRI,2939.07,0.0,0
+112981,HDFC FoF Direct Plan Growth,HDFC,Other,FoF,Very High,2016-05-30,NIFTY FoF 100 TRI,777.27,1.5,365
+113058,ICICI Prudential Large Cap Direct Plan Growth,ICICI Prudential,Equity,Large Cap,Moderately Low,2014-02-09,NIFTY Large 100 TRI,856.52,0.0,365
+113184,HDFC Index Fund Direct Plan Growth,HDFC,Other,Index Fund,Moderately High,2010-03-17,NIFTY Index 100 TRI,2598.4,0.0,1095
+113247,Kotak Mahindra ETF Direct Plan Growth,Kotak Mahindra,Other,ETF,Very High,2010-04-14,NIFTY ETF 100 TRI,4926.99,1.0,1095
+113336,Axis Liquid Direct Plan Growth,Axis,Debt,Liquid,Low,2016-11-19,NIFTY Liquid 100 TRI,2208.89,0.5,365
+113457,SBI Large Cap Direct Plan Growth,SBI,Equity,Large Cap,Moderately Low,2015-09-30,NIFTY Large 100 TRI,935.25,0.5,1095
+113536,Nippon India Index Fund Direct Plan Growth,Nippon India,Other,Index Fund,Moderate,2018-10-25,NIFTY Index 100 TRI,2478.89,1.5,365
+113667,SBI Index Fund Direct Plan Growth,SBI,Other,Index Fund,Very High,2010-06-05,NIFTY Index 100 TRI,5135.85,0.5,365
+113721,Aditya Birla Retirement Direct Plan Growth,Aditya Birla,Solution Oriented,Retirement,Moderate,2019-04-26,NIFTY Retirement 100 TRI,593.89,0.5,0
+113864,HDFC Small Cap Direct Plan Growth,HDFC,Equity,Small Cap,High,2015-07-12,NIFTY Small 100 TRI,1770.43,0.5,365
+113976,Nippon India Balanced Advantage Direct Plan Growth,Nippon India,Hybrid,Balanced Advantage,Very High,2014-06-02,NIFTY Balanced 100 TRI,94.21,1.5,1095
+114036,SBI Liquid Direct Plan Growth,SBI,Debt,Liquid,Moderate,2016-05-25,NIFTY Liquid 100 TRI,844.81,1.0,0
+114147,Nippon India ETF Direct Plan Growth,Nippon India,Other,ETF,Moderately Low,2011-02-25,NIFTY ETF 100 TRI,92.58,1.0,0
+114260,Kotak Mahindra Conservative Direct Plan Growth,Kotak Mahindra,Hybrid,Conservative,Moderate,2016-11-19,NIFTY Conservative 100 TRI,4031.64,0.5,365
+114323,HDFC Multi Cap Direct Plan Growth,HDFC,Equity,Multi Cap,High,2010-12-22,NIFTY Multi 100 TRI,856.01,1.0,1095
+114442,Mirae Asset Children's Direct Plan Growth,Mirae Asset,Solution Oriented,Children's,Moderate,2011-07-04,NIFTY Children's 100 TRI,5526.95,1.5,365
+114535,Kotak Mahindra FoF Direct Plan Growth,Kotak Mahindra,Other,FoF,Low,2014-06-13,NIFTY FoF 100 TRI,202.85,1.0,365
+114618,DSP Sectoral Direct Plan Growth,DSP,Equity,Sectoral,High,2010-01-25,NIFTY Sectoral 100 TRI,5799.0,1.5,1095
+114716,Axis ELSS Direct Plan Growth,Axis,Equity,ELSS,High,2016-03-16,NIFTY ELSS 100 TRI,2586.14,1.0,0
+114855,Nippon India Index Fund Direct Plan Growth,Nippon India,Other,Index Fund,Moderate,2019-07-16,NIFTY Index 100 TRI,210.13,0.5,365
+114997,UTI Sectoral Direct Plan Growth,UTI,Equity,Sectoral,Moderately Low,2012-09-21,NIFTY Sectoral 100 TRI,3982.51,0.5,1095
+115033,ICICI Prudential ELSS Direct Plan Growth,ICICI Prudential,Equity,ELSS,Moderately High,2014-05-04,NIFTY ELSS 100 TRI,996.58,0.5,0
+115101,SBI Children's Direct Plan Growth,SBI,Solution Oriented,Children's,Moderately Low,2013-01-29,NIFTY Children's 100 TRI,354.33,1.0,365
+115298,Nippon India Multi Cap Direct Plan Growth,Nippon India,Equity,Multi Cap,Very High,2010-04-11,NIFTY Multi 100 TRI,1477.03,1.0,0
+115383,Aditya Birla Children's Direct Plan Growth,Aditya Birla,Solution Oriented,Children's,Low,2011-01-08,NIFTY Children's 100 TRI,1352.94,1.0,365
+115475,DSP Small Cap Direct Plan Growth,DSP,Equity,Small Cap,Moderately High,2011-01-10,NIFTY Small 100 TRI,812.99,0.0,0
+115569,Kotak Mahindra Balanced Advantage Direct Plan Growth,Kotak Mahindra,Hybrid,Balanced Advantage,Moderately Low,2013-02-28,NIFTY Balanced 100 TRI,685.68,1.5,365
+115697,Nippon India ETF Direct Plan Growth,Nippon India,Other,ETF,Low,2012-08-03,NIFTY ETF 100 TRI,1638.21,1.5,0
+115761,Nippon India Conservative Direct Plan Growth,Nippon India,Hybrid,Conservative,Moderate,2016-11-20,NIFTY Conservative 100 TRI,1068.19,0.0,0
+115816,DSP Gilt Direct Plan Growth,DSP,Debt,Gilt,Moderately High,2010-10-01,NIFTY Gilt 100 TRI,83.12,0.5,0
+115984,Kotak Mahindra FoF Direct Plan Growth,Kotak Mahindra,Other,FoF,Moderate,2010-06-28,NIFTY FoF 100 TRI,1468.28,1.0,365
+116048,Nippon India Retirement Direct Plan Growth,Nippon India,Solution Oriented,Retirement,Low,2013-11-06,NIFTY Retirement 100 TRI,678.08,0.0,0
+116178,DSP Index Fund Direct Plan Growth,DSP,Other,Index Fund,Moderate,2014-04-15,NIFTY Index 100 TRI,2798.68,0.5,1095
+116205,Axis Multi Cap Direct Plan Growth,Axis,Equity,Multi Cap,Moderate,2017-12-14,NIFTY Multi 100 TRI,5349.52,0.0,0
+116373,Aditya Birla Ultra Short Direct Plan Growth,Aditya Birla,Debt,Ultra Short,High,2013-12-10,NIFTY Ultra 100 TRI,862.57,0.0,0
+116432,DSP Retirement Direct Plan Growth,DSP,Solution Oriented,Retirement,Low,2011-02-17,NIFTY Retirement 100 TRI,680.2,1.0,1095
+116502,Aditya Birla Sectoral Direct Plan Growth,Aditya Birla,Equity,Sectoral,Moderately Low,2010-05-24,NIFTY Sectoral 100 TRI,761.73,0.0,0
+116655,DSP Small Cap Direct Plan Growth,DSP,Equity,Small Cap,Moderately Low,2012-11-16,NIFTY Small 100 TRI,846.66,0.5,0
+116783,Nippon India Aggressive Direct Plan Growth,Nippon India,Hybrid,Aggressive,Moderate,2018-09-29,NIFTY Aggressive 100 TRI,2260.48,0.0,1095
+116849,Nippon India FoF Direct Plan Growth,Nippon India,Other,FoF,Moderately Low,2014-08-10,NIFTY FoF 100 TRI,1084.76,1.5,0
+116916,Aditya Birla Mid Cap Direct Plan Growth,Aditya Birla,Equity,Mid Cap,Very High,2016-08-28,NIFTY Mid 100 TRI,3918.03,1.0,0
+117051,Axis ELSS Direct Plan Growth,Axis,Equity,ELSS,Low,2019-01-27,NIFTY ELSS 100 TRI,271.02,1.0,1095
+117143,Mirae Asset Conservative Direct Plan Growth,Mirae Asset,Hybrid,Conservative,High,2017-09-14,NIFTY Conservative 100 TRI,1922.87,0.5,0
+117282,Mirae Asset Large Cap Direct Plan Growth,Mirae Asset,Equity,Large Cap,Moderately High,2013-01-18,NIFTY Large 100 TRI,4326.03,1.0,365
+117340,Nippon India Index Fund Direct Plan Growth,Nippon India,Other,Index Fund,Low,2013-11-02,NIFTY Index 100 TRI,701.81,0.5,1095
+117417,Axis FoF Direct Plan Growth,Axis,Other,FoF,Low,2010-02-08,NIFTY FoF 100 TRI,1463.73,0.0,0
+117585,SBI Gilt Direct Plan Growth,SBI,Debt,Gilt,Moderate,2014-04-18,NIFTY Gilt 100 TRI,2049.61,1.0,365
+117689,ICICI Prudential FoF Direct Plan Growth,ICICI Prudential,Other,FoF,Moderately Low,2010-06-05,NIFTY FoF 100 TRI,2208.72,0.5,365
+117767,HDFC Corporate Bond Direct Plan Growth,HDFC,Debt,Corporate Bond,Moderately Low,2018-12-06,NIFTY Corporate 100 TRI,1849.27,0.0,365
+117841,Axis ETF Direct Plan Growth,Axis,Other,ETF,Low,2017-05-28,NIFTY ETF 100 TRI,2034.38,0.0,365
+117974,UTI ELSS Direct Plan Growth,UTI,Equity,ELSS,High,2018-09-03,NIFTY ELSS 100 TRI,5734.41,1.0,365
+118073,Kotak Mahindra Short Duration Direct Plan Growth,Kotak Mahindra,Debt,Short Duration,Low,2010-05-21,NIFTY Short 100 TRI,498.28,1.5,1095
+118172,DSP FoF Direct Plan Growth,DSP,Other,FoF,Very High,2011-07-06,NIFTY FoF 100 TRI,6227.61,0.5,0
+118262,Nippon India Ultra Short Direct Plan Growth,Nippon India,Debt,Ultra Short,Very High,2014-12-07,NIFTY Ultra 100 TRI,4569.34,1.5,0
+118346,SBI Aggressive Direct Plan Growth,SBI,Hybrid,Aggressive,Moderate,2013-07-28,NIFTY Aggressive 100 TRI,566.78,1.5,365
+118475,Kotak Mahindra Conservative Direct Plan Growth,Kotak Mahindra,Hybrid,Conservative,Very High,2018-03-20,NIFTY Conservative 100 TRI,5787.28,0.5,0
+118595,Aditya Birla Ultra Short Direct Plan Growth,Aditya Birla,Debt,Ultra Short,Moderately High,2010-11-09,NIFTY Ultra 100 TRI,2096.98,1.0,0
+118665,Kotak Mahindra Ultra Short Direct Plan Growth,Kotak Mahindra,Debt,Ultra Short,High,2014-11-22,NIFTY Ultra 100 TRI,646.86,0.0,0
+118767,Nippon India Index Fund Direct Plan Growth,Nippon India,Other,Index Fund,Moderate,2017-01-11,NIFTY Index 100 TRI,675.75,1.0,0
+118823,SBI Children's Direct Plan Growth,SBI,Solution Oriented,Children's,Very High,2014-07-12,NIFTY Children's 100 TRI,1850.91,0.5,0
+118965,ICICI Prudential Retirement Direct Plan Growth,ICICI Prudential,Solution Oriented,Retirement,Moderately High,2011-08-18,NIFTY Retirement 100 TRI,64.17,0.5,0
+119034,ICICI Prudential Large Cap Direct Plan Growth,ICICI Prudential,Equity,Large Cap,Moderate,2011-06-08,NIFTY Large 100 TRI,372.22,0.0,1095
+119195,SBI Gilt Direct Plan Growth,SBI,Debt,Gilt,Moderate,2015-01-15,NIFTY Gilt 100 TRI,1.38,0.5,0
+119239,SBI Aggressive Direct Plan Growth,SBI,Hybrid,Aggressive,Low,2014-03-27,NIFTY Aggressive 100 TRI,1183.16,1.5,365
+119391,UTI Retirement Direct Plan Growth,UTI,Solution Oriented,Retirement,Moderately High,2016-05-09,NIFTY Retirement 100 TRI,299.63,0.5,1095
+119416,SBI Children's Direct Plan Growth,SBI,Solution Oriented,Children's,Low,2013-07-15,NIFTY Children's 100 TRI,129.48,1.5,0
+119538,UTI Large Cap Direct Plan Growth,UTI,Equity,Large Cap,High,2016-07-20,NIFTY Large 100 TRI,824.5,0.0,365
+119622,DSP Children's Direct Plan Growth,DSP,Solution Oriented,Children's,High,2013-08-15,NIFTY Children's 100 TRI,3101.54,1.0,0
+100067,ICICI Prudential Children's Direct Plan Growth,ICICI Prudential,Solution Oriented,Children's,Moderately High,2014-12-23,NIFTY Children's 100 TRI,253.21,0.5,0
+100067,Aditya Birla Children's Direct Plan Growth,Aditya Birla,Solution Oriented,Children's,Moderately Low,2011-02-21,NIFTY Children's 100 TRI,1386.38,1.5,0
+100067,Mirae Asset Gilt Direct Plan Growth,Mirae Asset,Debt,Gilt,Moderate,2012-11-05,NIFTY Gilt 100 TRI,4665.65,0.5,0
