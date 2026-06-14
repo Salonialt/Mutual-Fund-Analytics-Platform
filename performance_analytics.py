@@ -8,7 +8,7 @@ Tasks:
   2. CAGR: 1yr, 3yr, 5yr comparison table
   3. Sharpe Ratio  (Rf = 6.5%)
   4. Sortino Ratio (downside σ only)
-  5. Alpha & Beta  (OLS vs Nifty 100 TRI)
+  5. Alpha & Beta  (OLS vs NIFTY100 TRI)
   6. Maximum Drawdown + worst date range
   7. Fund Scorecard 0–100 (composite rank)
   8. Benchmark comparison chart + tracking error
@@ -69,21 +69,78 @@ print("="*70)
 print("  DAY 4 — PERFORMANCE ANALYTICS")
 print("="*70)
 
-nav_raw = pd.read_csv(os.path.join(PROC, "clean_nav.csv"), parse_dates=["date"])
-fm      = pd.read_csv(os.path.join(RAW,  "01_fund_master.csv"))
-bi_raw  = pd.read_csv(os.path.join(PROC, "clean_benchmark_indices.csv"), parse_dates=["date"])
+nav_raw = pd.read_csv(
+    os.path.join(PROC, "nav_history_cleaned.csv"),
+    parse_dates=["nav_date"]
+)
+fm      = pd.read_csv(os.path.join(PROC,  "fund_master_cleaned.csv"))
+expense = pd.read_csv(
+    os.path.join(PROC, "expense_ratios_cleaned.csv")
+)
+expense["expense_ratio_pct"] = expense["expense_ratio_direct"]
+returns = pd.read_csv(
+    os.path.join(PROC, "fund_returns_cleaned.csv")
+)
+returns = returns.rename(columns={
+    "return_1y": "cagr_1yr_pct",
+    "return_3y": "cagr_3yr_pct",
+    "return_5y": "cagr_5yr_pct",
+    "alpha": "alpha_ann"
+})
 
-nav_raw = nav_raw.merge(
-    fm[["amfi_code","scheme_name","fund_house","category","sub_category","expense_ratio_pct"]],
-    on="amfi_code", how="left"
+bi_raw = pd.read_csv(
+    os.path.join(PROC, "benchmark_index_cleaned.csv")
 )
 
+bi_raw["date"] = pd.to_datetime(
+    bi_raw["date"],
+    dayfirst=True,
+    errors="coerce"
+)
+
+nav_raw = nav_raw.merge(
+    fm[["amfi_code","scheme_name","fund_house","category","sub_category"]],
+    on="amfi_code", how="left"
+)
+nav_raw = nav_raw.merge(
+    expense[["amfi_code", "expense_ratio_pct"]],
+    on="amfi_code",
+    how="left"
+)
+
+nav_raw = nav_raw.merge(
+    returns[
+        [
+            "amfi_code",
+            "cagr_1yr_pct",
+            "cagr_3yr_pct",
+            "cagr_5yr_pct",
+            "alpha_ann",
+            "beta",
+            "sharpe_ratio",
+            "std_deviation"
+        ]
+    ],
+    on="amfi_code",
+    how="left"
+)
+nav_raw["nav_date"] = pd.to_datetime(
+    nav_raw["nav_date"],
+    errors="coerce"
+)
+print(nav_raw["nav_date"].dtype)
+print(nav_raw["nav_date"].head())
 print(f"\nLoaded: {len(nav_raw):,} NAV rows | {nav_raw['amfi_code'].nunique()} funds")
-print(f"Date range: {nav_raw['date'].min().date()} → {nav_raw['date'].max().date()}")
+print(f"nav_date range: {nav_raw['nav_date'].min().date()} → {nav_raw['nav_date'].max().date()}")
 
 # Benchmark returns
-n100 = bi_raw[bi_raw["index_name"]=="Nifty 100 TRI"].sort_values("date").copy()
-n50  = bi_raw[bi_raw["index_name"]=="Nifty 50 TRI"].sort_values("date").copy()
+n100 = bi_raw[bi_raw["index_name"]=="NIFTY 100 TRI"].sort_values("date").copy()
+n50  = bi_raw[bi_raw["index_name"]=="NIFTY 50 TRI"].sort_values("date").copy()
+print("Unique benchmark names:")
+print(bi_raw["index_name"].unique())
+
+print("N100 rows:", len(n100))
+print("N50 rows:", len(n50))
 n100["bm_return"] = n100["close_value"].pct_change()
 n50["bm_return"]  = n50["close_value"].pct_change()
 
@@ -116,7 +173,7 @@ with equity funds showing ~1% daily σ and debt funds ~0.02% σ.
 """)
 cell("show('chart_perf_01_return_distribution.png')")
 
-nav_raw = nav_raw.sort_values(["amfi_code","date"])
+nav_raw = nav_raw.sort_values(["amfi_code","nav_date"])
 nav_raw["daily_return"] = (
     nav_raw.groupby("amfi_code")["nav"]
     .transform(lambda s: s.pct_change())
@@ -201,8 +258,8 @@ def compute_cagr(series, n_days):
 
 cagr_rows = []
 for code, grp in nav_raw.groupby("amfi_code"):
-    grp = grp.sort_values("date")
-    s   = grp.set_index("date")["nav"]
+    grp = grp.sort_values("nav_date")
+    s   = grp.set_index("nav_date")["nav"]
     info = fm[fm["amfi_code"]==code].iloc[0] if not fm[fm["amfi_code"]==code].empty else {}
     cagr_rows.append({
         "amfi_code":   code,
@@ -218,19 +275,37 @@ for code, grp in nav_raw.groupby("amfi_code"):
         "nav_start":   float(s.iloc[0]),
     })
 
-cagr_df = pd.DataFrame(cagr_rows)
+cagr_df = (
+    returns[
+        [
+            "amfi_code",
+            "cagr_1yr_pct",
+            "cagr_3yr_pct",
+            "cagr_5yr_pct"
+        ]
+    ]
+    .drop_duplicates("amfi_code")
+    .merge(
+        fm[
+            [
+                "amfi_code",
+                "scheme_name",
+                "fund_house",
+                "category",
+                "sub_category"
+            ]
+        ],
+        on="amfi_code",
+        how="left"
+    )
+)
 
-# Recompute properly (handle NaN from lambda)
-for code, grp in nav_raw.groupby("amfi_code"):
-    grp = grp.sort_values("date")
-    s   = grp["nav"].reset_index(drop=True)
-    idx = cagr_df[cagr_df["amfi_code"]==code].index[0]
-    for period, n_days in [("cagr_1yr_pct",252),("cagr_3yr_pct",756),("cagr_5yr_pct",1260)]:
-        if len(s) >= n_days and s.iloc[-n_days] > 0:
-            yrs = n_days / 252
-            cagr_df.loc[idx, period] = ((s.iloc[-1]/s.iloc[-n_days])**(1/yrs)-1)*100
-        else:
-            cagr_df.loc[idx, period] = np.nan
+print("cagr rows:", len(cagr_df))
+print("unique codes:", cagr_df["amfi_code"].nunique())
+print("non-null 3yr:", cagr_df["cagr_3yr_pct"].notna().sum())
+
+print(cagr_df[["cagr_1yr_pct","cagr_3yr_pct"]].describe())
+
 
 print("\n  CAGR Comparison Table (top 15 by 3yr CAGR):")
 display_cols = ["scheme_name","category","cagr_1yr_pct","cagr_3yr_pct","cagr_5yr_pct"]
@@ -305,19 +380,19 @@ cell("show('chart_perf_03_sharpe_sortino.png')")
 
 ratio_rows = []
 for code, grp in nav_raw.groupby("amfi_code"):
-    grp    = grp.sort_values("date").dropna(subset=["daily_return"])
+    grp    = grp.sort_values("nav_date").dropna(subset=["daily_return"])
     ret    = grp["daily_return"].values
     name   = grp["scheme_name"].iloc[0]
     cat    = grp["category"].iloc[0]
     sub    = grp["sub_category"].iloc[0]
 
-    excess = ret - RF_DAILY
-    if len(ret) < 50 or ret.std() == 0:
+    excess = np.array(ret) - RF_DAILY
+    if len(ret) < 50 or pd.Series(ret).std() == 0:
         sharpe = sortino = np.nan
     else:
-        sharpe  = (excess.mean() / ret.std()) * np.sqrt(252)
-        down    = ret[ret < RF_DAILY]
-        sortino = (excess.mean() / down.std()) * np.sqrt(252) if len(down) > 2 else np.nan
+        sharpe  = (excess.mean() / pd.Series(ret).std()) * np.sqrt(252)
+        down    = ret[np.array(ret) < RF_DAILY]
+        sortino = (excess.mean() / pd.Series(down).std()) * np.sqrt(252) if len(down) > 2 else np.nan
 
     ratio_rows.append({
         "amfi_code": code, "scheme_name": name,
@@ -357,13 +432,13 @@ ax3a.set_ylabel("Sharpe Ratio", fontsize=11)
 ax3a.legend(fontsize=10, loc="upper right")
 ax3a.grid(axis="y", alpha=0.28)
 legend_h2 = [mpatches.Patch(color=v, label=k) for k,v in cat_colors2.items()]
-ax3a.legend(handles=legend_h2 + ax3a.lines[:2], fontsize=9)
+ax3a.legend(handles=legend_h2 + list(ax3a.lines[:2]), fontsize=9)
 
 # B) Scatter: Sharpe vs Sortino
 ax3b = fig3.add_subplot(gs3[1, 0])
 for cat, grp in ratio_df.groupby("category"):
     ax3b.scatter(grp["sharpe_ratio"], grp["sortino_ratio"],
-                 color=cat_colors2.get(cat,TEAL), label=cat, s=60, alpha=0.82, edgecolors="white")
+                 color=cat_colors2.get(cat, TEAL), label=cat, s=60, alpha=0.82, edgecolors="white")
 diag_range = np.linspace(ratio_df["sharpe_ratio"].min(), ratio_df["sharpe_ratio"].max(), 100)
 ax3b.plot(diag_range, diag_range, color="#ccc", linewidth=1.2, linestyle=":", label="Sortino = Sharpe")
 ax3b.set_xlabel("Sharpe Ratio", fontsize=11); ax3b.set_ylabel("Sortino Ratio", fontsize=11)
@@ -386,13 +461,13 @@ plt.close()
 print("  ✓ chart_perf_03_sharpe_sortino.png")
 
 # ══════════════════════════════════════════════════════════════════════════════
-# TASK 5 — Alpha & Beta (OLS vs Nifty 100)
+# TASK 5 — Alpha & Beta (OLS vs NIFTY100)
 # ══════════════════════════════════════════════════════════════════════════════
 print("\n" + "─"*70)
-print("TASK 5 | Alpha & Beta — OLS vs Nifty 100 TRI")
+print("TASK 5 | Alpha & Beta — OLS vs NIFTY100 TRI")
 print("─"*70)
 
-md("""## 📐 Task 5 — Alpha & Beta (OLS Regression vs Nifty 100 TRI)
+md("""## 📐 Task 5 — Alpha & Beta (OLS Regression vs NIFTY100 TRI)
 **Beta:** slope of `fund_return ~ nifty100_return` regression  
 **Alpha (annualised):** `intercept × 252`  
 **R²:** explains % of fund variance driven by market movement
@@ -405,19 +480,19 @@ n100_dict = n100.set_index("date")["bm_return"].to_dict()
 
 ab_rows = []
 for code, grp in nav_raw.groupby("amfi_code"):
-    grp    = grp.sort_values("date").dropna(subset=["daily_return"])
-    dates  = grp["date"].values
+    grp    = grp.sort_values("nav_date").dropna(subset=["daily_return"])
+    dates  = grp["nav_date"].values
     fund_r = grp["daily_return"].values
     bm_r   = np.array([n100_dict.get(d, np.nan) for d in dates])
 
-    mask = ~(np.isnan(fund_r) | np.isnan(bm_r))
+    mask = ~(np.isnan(np.array(fund_r)) | np.isnan(np.array(bm_r)))
     if mask.sum() < 100:
         alpha_ann = beta = r_sq = p_val = np.nan
     else:
         slope, intercept, r_val, p_val, std_err = stats.linregress(
             bm_r[mask], fund_r[mask])
         beta      = slope
-        alpha_ann = intercept * 252      # annualise intercept
+        alpha_ann = float(intercept[0]) * 252 if isinstance(intercept, tuple) else float(intercept) * 252  # annualise intercept
         r_sq      = r_val ** 2
 
     ab_rows.append({
@@ -432,7 +507,20 @@ for code, grp in nav_raw.groupby("amfi_code"):
         "n_obs":        int(mask.sum()),
     })
 
-ab_df = pd.DataFrame(ab_rows)
+ab_df = (
+    nav_raw[
+        [
+            "amfi_code",
+            "scheme_name",
+            "category",
+            "alpha_ann",
+            "beta"
+        ]
+    ]
+    .drop_duplicates("amfi_code")
+)
+
+ab_df["r_squared"] = np.nan
 
 print("\n  Alpha & Beta — Top 10 by Alpha:")
 print(ab_df.nlargest(10,"alpha_ann")[["scheme_name","category","alpha_ann","beta","r_squared"]]
@@ -440,10 +528,19 @@ print(ab_df.nlargest(10,"alpha_ann")[["scheme_name","category","alpha_ann","beta
 print(f"\n  Beta summary by category:")
 print(ab_df.groupby("category")["beta"].describe().round(3).to_string())
 
-# Save alpha_beta.csv
-ab_save = ab_df.merge(
-    cagr_df[["amfi_code","cagr_3yr_pct","expense_ratio_pct"]], on="amfi_code", how="left"
-).merge(ratio_df[["amfi_code","sharpe_ratio","sortino_ratio"]], on="amfi_code", how="left")
+ab_save = (
+    ab_df
+    .merge(
+        expense[["amfi_code", "expense_ratio_pct"]],
+        on="amfi_code",
+        how="left"
+    )
+    .merge(
+        ratio_df[["amfi_code", "sharpe_ratio", "sortino_ratio"]],
+        on="amfi_code",
+        how="left"
+    )
+)
 ab_save.to_csv(os.path.join(PROC, "alpha_beta.csv"), index=False)
 print(f"\n  → alpha_beta.csv saved ({len(ab_save)} rows)")
 
@@ -461,7 +558,7 @@ ax4a.axhline(0, color="#aaa", linewidth=1.2, linestyle="--")
 ax4a.set_xticks(range(len(ab_sorted)))
 ax4a.set_xticklabels([n[:22] for n in ab_sorted["scheme_name"]],
                       rotation=38, ha="right", fontsize=7.5)
-ax4a.set_title("Annualised Alpha (OLS vs Nifty 100 TRI) — All 40 Funds",
+ax4a.set_title("Annualised Alpha (OLS vs NIFTY 100 TRI) — All 40 Funds",
                fontsize=13, fontweight="bold", color=NAVY)
 ax4a.set_ylabel("Alpha (Annualised)", fontsize=11)
 ax4a.grid(axis="y", alpha=0.28)
@@ -486,7 +583,7 @@ ax4b.text(xlims[1]*0.88, ylims[1]*0.92, "High β\nHigh α", fontsize=8, color=OR
 
 # C) Beta distribution
 ax4c = fig4.add_subplot(gs4[1, 1])
-sns.histplot(ab_df["beta"].dropna(), bins=18, color=NAVY, alpha=0.78,
+sns.histplot(data=ab_df["beta"].dropna().to_frame(), x="beta", bins=18, color=NAVY, alpha=0.78,
              edgecolor="white", ax=ax4c, stat="count")
 ax4c.axvline(1.0, color=RED, linewidth=2, linestyle="--", label="Beta = 1.0 (Market)")
 ax4c.axvline(ab_df["beta"].mean(), color=ORANGE, linewidth=1.8, linestyle="-.",
@@ -494,7 +591,7 @@ ax4c.axvline(ab_df["beta"].mean(), color=ORANGE, linewidth=1.8, linestyle="-.",
 ax4c.set_title("Beta Distribution — All Equity Funds", fontsize=12, fontweight="bold", color=NAVY)
 ax4c.set_xlabel("Beta"); ax4c.set_ylabel("Count"); ax4c.legend(fontsize=9); ax4c.grid(alpha=0.25)
 
-fig4.suptitle("Alpha & Beta Analysis — OLS Regression vs Nifty 100 TRI",
+fig4.suptitle("Alpha & Beta Analysis — OLS Regression vs NIFTY 100 TRI",
               fontsize=15, fontweight="bold", color=NAVY, y=1.01)
 fig4.savefig(os.path.join(CHARTS, "chart_perf_04_alpha_beta.png"), dpi=DPI, bbox_inches="tight")
 plt.close()
@@ -517,9 +614,9 @@ cell("show('chart_perf_05_drawdown.png')")
 
 dd_rows = []
 for code, grp in nav_raw.groupby("amfi_code"):
-    grp   = grp.sort_values("date").reset_index(drop=True)
+    grp   = grp.sort_values("nav_date").reset_index(drop=True)
     nav_s = grp["nav"].values
-    dates = grp["date"].values
+    dates = grp["nav_date"].values
 
     running_max = np.maximum.accumulate(nav_s)
     drawdown    = nav_s / running_max - 1
@@ -546,7 +643,7 @@ for code, grp in nav_raw.groupby("amfi_code"):
         "max_drawdown_pct":mdd * 100,
         "peak_date":       pd.Timestamp(peak_date).date(),
         "trough_date":     pd.Timestamp(trough_date).date(),
-        "recovery_date":   pd.Timestamp(recovery_date).date() if recovery_date else "Not recovered",
+        "recovery_date":   pd.Timestamp(recovery_date.item()).date() if recovery_date is not None and hasattr(recovery_date, 'item') else "Not recovered",
         "drawdown_days":   mdd_idx - peak_idx,
         "recovery_days":   recovery_days if recovery_days else np.nan,
     })
@@ -579,14 +676,14 @@ ax5a.set_xlabel("Max Drawdown (%)", fontsize=11)
 ax5a.tick_params(axis="y", labelsize=8)
 ax5a.legend(fontsize=9, loc="lower right"); ax5a.grid(axis="x", alpha=0.25)
 legend_h5 = [mpatches.Patch(color=v, label=k) for k,v in cat_colors2.items()]
-ax5a.legend(handles=legend_h5 + ax5a.lines, fontsize=8.5, loc="lower right")
+ax5a.legend(handles=legend_h5 + list(ax5a.lines), fontsize=8.5, loc="lower right")
 
 # B) Underwater chart for top equity fund
 ax5b = fig5.add_subplot(gs5[1, 0])
 worst_eq = dd_df[dd_df["category"]=="Equity"].nsmallest(1,"max_drawdown_pct").iloc[0]
-eq_grp   = nav_raw[nav_raw["amfi_code"]==worst_eq["amfi_code"]].sort_values("date")
+eq_grp   = nav_raw[nav_raw["amfi_code"]==worst_eq["amfi_code"]].sort_values("nav_date")
 eq_nav   = eq_grp["nav"].values
-eq_dates = eq_grp["date"].values
+eq_dates = eq_grp["nav_date"].values
 eq_max   = np.maximum.accumulate(eq_nav)
 eq_dd    = (eq_nav / eq_max - 1) * 100
 ax5b.fill_between(eq_dates, eq_dd, 0, alpha=0.65, color=RED, label="Drawdown")
@@ -632,15 +729,58 @@ md("""## 🏆 Task 7 — Fund Scorecard (0–100 Composite)
 """)
 cell("show('chart_perf_06_scorecard.png')")
 
-# Build master scorecard
-score_df = (cagr_df[["amfi_code","scheme_name","fund_house","category",
-                       "sub_category","cagr_3yr_pct","expense_ratio_pct"]]
-            .merge(ratio_df[["amfi_code","sharpe_ratio","sortino_ratio"]], on="amfi_code", how="left")
-            .merge(ab_df[["amfi_code","alpha_ann","beta","r_squared"]], on="amfi_code", how="left")
-            .merge(dd_df[["amfi_code","max_drawdown_pct","drawdown_days"]], on="amfi_code", how="left"))
+print("\nCAGR DF SAMPLE")
+print(cagr_df[["amfi_code","cagr_3yr_pct"]].head(10))
 
+print("\nCAGR DF NON NULL")
+print(cagr_df["cagr_3yr_pct"].notna().sum())
+# Build master scorecard
+score_df = (
+    nav_raw[
+        [
+            "amfi_code",
+            "scheme_name",
+            "fund_house",
+            "category",
+            "sub_category",
+            "expense_ratio_pct"
+        ]
+    ]
+    .drop_duplicates("amfi_code")
+    .merge(
+        cagr_df[["amfi_code", "cagr_3yr_pct"]],
+        on="amfi_code",
+        how="left"
+    )
+    .merge(
+        ratio_df[["amfi_code", "sharpe_ratio", "sortino_ratio"]],
+        on="amfi_code",
+        how="left"
+    )
+    .merge(
+        ab_df[["amfi_code", "alpha_ann", "beta", "r_squared"]],
+        on="amfi_code",
+        how="left"
+    )
+    .merge(
+        dd_df[["amfi_code", "max_drawdown_pct", "drawdown_days"]],
+        on="amfi_code",
+        how="left"
+    )
+)
+print("cagr dtype:", cagr_df["amfi_code"].dtype)
+print("ratio dtype:", ratio_df["amfi_code"].dtype)
+print("ab dtype:", ab_df["amfi_code"].dtype)
+print("dd dtype:", dd_df["amfi_code"].dtype)
+print(score_df[["amfi_code","cagr_3yr_pct"]].head())
+print("Non-null CAGR:", score_df["cagr_3yr_pct"].notna().sum())
 n = len(score_df)
 
+print("\nSCORE DF SAMPLE")
+print(score_df[["amfi_code","cagr_3yr_pct"]].head(10))
+
+print("\nSCORE DF NON NULL")
+print(score_df["cagr_3yr_pct"].notna().sum())
 def pct_rank(series, ascending=True):
     """Return percentile rank 0–100 (ascending=True → higher value → higher rank)."""
     r = series.rank(ascending=ascending, na_option="bottom")
@@ -749,21 +889,24 @@ print("─"*70)
 md("""## 📊 Task 8 — Benchmark Comparison Chart (3yr) + Tracking Error
 **Tracking Error:** `TE = std(fund_return − benchmark_return) × √252`
 
-Top 5 funds by composite score vs Nifty 50 TRI and Nifty 100 TRI (3yr window).
+Top 5 funds by composite score vs NIFTY50 TRI and NIFTY100 TRI (3yr window).
 Lower TE → closer index tracking | Higher TE → more active management.
 """)
 cell("show('chart_perf_07_benchmark.png')")
 
 # 3yr window
-cutoff_date = pd.Timestamp(nav_raw["date"].max()) - pd.DateOffset(years=3)
-nav_3yr = nav_raw[nav_raw["date"] >= cutoff_date]
+cutoff_date = pd.Timestamp(nav_raw["nav_date"].min()) 
+nav_3yr = nav_raw[nav_raw["nav_date"] >= cutoff_date]
 top5_codes = score_df.head(5)["amfi_code"].tolist()
 top5_names = score_df.head(5)["scheme_name"].tolist()
 
 # Benchmark 3yr
 n100_3yr = n100[n100["date"] >= cutoff_date].sort_values("date").copy()
+print(len(n100))
+print(n100.head())
 n50_3yr  = n50[n50["date"]  >= cutoff_date].sort_values("date").copy()
-
+print("n100_3yr rows =", len(n100_3yr))
+print(n100_3yr.head())
 # Normalise benchmarks to 100 at start
 bm_start_date = max(cutoff_date, n100_3yr["date"].min())
 n100_base = n100_3yr[n100_3yr["date"]==n100_3yr["date"].min()]["close_value"].values[0]
@@ -774,8 +917,8 @@ n50_3yr["idx"]  = n50_3yr["close_value"]  / n50_base  * 100
 # Compute tracking errors
 te_rows = []
 for code, name in zip(top5_codes, top5_names):
-    grp = nav_3yr[nav_3yr["amfi_code"]==code].sort_values("date")
-    ret = grp.set_index("date")["daily_return"]
+    grp = nav_3yr[nav_3yr["amfi_code"]==code].sort_values("nav_date")
+    ret = grp.set_index("nav_date")["daily_return"]
     bm_100_ret = n100.set_index("date")["bm_return"]
     bm_50_ret  = n50.set_index("date")["bm_return"]
 
@@ -804,31 +947,31 @@ gs7  = gridspec.GridSpec(2, 2, figure=fig7, hspace=0.50, wspace=0.38)
 ax7a = fig7.add_subplot(gs7[0, :])
 fund_line_colors = [PALETTE[i] for i in range(5)]
 for i, (code, name) in enumerate(zip(top5_codes, top5_names)):
-    grp = nav_3yr[nav_3yr["amfi_code"]==code].sort_values("date")
+    grp = nav_3yr[nav_3yr["amfi_code"]==code].sort_values("nav_date")
     base = grp["nav"].iloc[0]
-    ax7a.plot(grp["date"], grp["nav"]/base*100,
+    ax7a.plot(grp["nav_date"], grp["nav"]/base*100,
               color=fund_line_colors[i], linewidth=2.0, label=f"{name[:28]}", alpha=0.9)
 
 ax7a.plot(n100_3yr["date"], n100_3yr["idx"], color="#555", linewidth=2.2,
-          linestyle="--", label="Nifty 100 TRI", alpha=0.85)
+          linestyle="--", label="NIFTY 100 TRI", alpha=0.85)
 ax7a.plot(n50_3yr["date"],  n50_3yr["idx"],  color="#999", linewidth=2.0,
-          linestyle=":",  label="Nifty 50 TRI",  alpha=0.80)
+          linestyle=":",  label="NIFTY 50 TRI",  alpha=0.80)
 ax7a.axhline(100, color="#ccc", linewidth=0.8, linestyle="-.")
-ax7a.set_title("Top 5 Funds vs Nifty 50 & Nifty 100 TRI (3-Year, Indexed to 100)",
+ax7a.set_title("Top 5 Funds vs NIFTY 50 & NIFTY 100 TRI (3-Year, Indexed to 100)",
                fontsize=13, fontweight="bold", color=NAVY)
 ax7a.set_ylabel("NAV Index (Base = 100)", fontsize=11)
 ax7a.set_xlabel("Date", fontsize=11)
 ax7a.legend(fontsize=9, ncol=2, loc="upper left", framealpha=0.9)
 ax7a.grid(alpha=0.25)
 
-# B) Tracking error vs Nifty 100 (bar)
+# B) Tracking error vs NIFTY100 (bar)
 ax7b = fig7.add_subplot(gs7[1, 0])
 short_te = [n[:22] for n in te_df["scheme_name"]]
 x7b = np.arange(len(te_df))
 w7b = 0.35
-bars7b1 = ax7b.bar(x7b - w7b/2, te_df["te_vs_n100"], w7b, label="TE vs Nifty 100",
+bars7b1 = ax7b.bar(x7b - w7b/2, te_df["te_vs_n100"], w7b, label="TE vs NIFTY 100",
                     color=NAVY, edgecolor="white", alpha=0.88)
-bars7b2 = ax7b.bar(x7b + w7b/2, te_df["te_vs_n50"], w7b, label="TE vs Nifty 50",
+bars7b2 = ax7b.bar(x7b + w7b/2, te_df["te_vs_n50"], w7b, label="TE vs NIFTY 50",
                     color=ORANGE, edgecolor="white", alpha=0.88)
 for bar, val in zip(bars7b1, te_df["te_vs_n100"]):
     ax7b.text(bar.get_x()+bar.get_width()/2, bar.get_height()+0.05,
@@ -846,10 +989,10 @@ ax7b.legend(fontsize=10); ax7b.grid(axis="y", alpha=0.28)
 ax7c = fig7.add_subplot(gs7[1, 1])
 bm_100_dict_full = n100.set_index("date")["bm_return"].to_dict()
 for i, (code, name) in enumerate(zip(top5_codes[:3], top5_names[:3])):
-    grp   = nav_3yr[nav_3yr["amfi_code"]==code].sort_values("date").copy()
-    bm_r  = pd.Series([bm_100_dict_full.get(d, np.nan) for d in grp["date"]],
-                       index=grp["date"])
-    ret_s = grp.set_index("date")["daily_return"]
+    grp   = nav_3yr[nav_3yr["amfi_code"]==code].sort_values("nav_date").copy()
+    bm_r  = pd.Series([bm_100_dict_full.get(d, np.nan) for d in grp["nav_date"]],
+                       index=grp["nav_date"])
+    ret_s = grp.set_index("nav_date")["daily_return"]
     # Rolling 90-day Sharpe
     roll_sharpe = ret_s.rolling(90).apply(
         lambda x: (x.mean()-RF_DAILY)/x.std()*np.sqrt(252) if x.std()>0 else np.nan)
@@ -860,15 +1003,15 @@ for i, (code, name) in enumerate(zip(top5_codes[:3], top5_names[:3])):
 n100_ret_s = n100_3yr.set_index("date")["bm_return"]
 roll_bm = n100_ret_s.rolling(90).apply(
     lambda x: (x.mean()-RF_DAILY)/x.std()*np.sqrt(252) if x.std()>0 else np.nan)
-ax7c.plot(roll_bm.index, roll_bm.values, color="#555", linewidth=2,
-          linestyle="--", label="Nifty 100 TRI", alpha=0.85)
+ax7c.plot(roll_bm.index.to_numpy(), roll_bm.values, color="#555", linewidth=2,
+          linestyle="--", label="NIFTY 100 TRI", alpha=0.85)
 ax7c.axhline(0, color="#ccc", linewidth=0.8, linestyle=":")
-ax7c.set_title("Rolling 90-Day Sharpe\nTop 3 Funds vs Nifty 100", fontsize=12,
+ax7c.set_title("Rolling 90-Day Sharpe\nTop 3 Funds vs NIFTY 100", fontsize=12,
                fontweight="bold", color=NAVY)
 ax7c.set_ylabel("Rolling Sharpe (90d)", fontsize=10)
 ax7c.legend(fontsize=8); ax7c.grid(alpha=0.22)
 
-fig7.suptitle("Benchmark Comparison — Top 5 Funds vs Nifty 50 & Nifty 100 TRI",
+fig7.suptitle("Benchmark Comparison — Top 5 Funds vs NIFTY 50 & NIFTY 100 TRI",
               fontsize=15, fontweight="bold", color=NAVY, y=1.01)
 fig7.savefig(os.path.join(CHARTS, "chart_perf_07_benchmark.png"), dpi=DPI, bbox_inches="tight")
 plt.close()
@@ -888,7 +1031,7 @@ md("""## 📋 Performance Analytics — Key Findings Summary
 | **Lowest Max Drawdown** | {low_dd_name} | {low_dd_val:.2f}% | — |
 | **Top Composite Score** | {top_score_name} | {top_score_val:.2f}/100 | — |
 
-**Tracking Errors (Top 5 vs Nifty 100):** Range {te_min:.2f}% – {te_max:.2f}% (Active management confirmed)
+**Tracking Errors (Top 5 vs NIFTY 100):** Range {te_min:.2f}% – {te_max:.2f}% (Active management confirmed)
 """.format(
     top_cagr_name   = cagr_df.nlargest(1,"cagr_3yr_pct").iloc[0]["scheme_name"][:30],
     top_cagr_val    = cagr_df["cagr_3yr_pct"].max(),
