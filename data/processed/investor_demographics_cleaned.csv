@@ -138,7 +138,7 @@ investor_id,age_group,city_tier,risk_appetite,investment_cr,tenure_years,channel
 137,46-55,Tier 1,Conservative,1.1056,6.6,Bank,M
 138,18-25,Tier 3,Conservative,0.0895,7.7,Distributor,F
 139,26-35,Tier 1,Aggressive,0.2555,0.9,Bank,M
-140,55+,Tier 2,Moderate,0.2836,1.5,Direct,None
+140,55+,Tier 2,Moderate,0.2836,1.5,Direct,
 141,26-35,Tier 2,Moderate,0.7767,4.5,Bank,F
 142,46-55,Tier 1,Moderate,0.0163,8.1,Bank,F
 143,46-55,Tier 3,Conservative,0.0134,1.8,Direct,M
@@ -207,11 +207,11 @@ investor_id,age_group,city_tier,risk_appetite,investment_cr,tenure_years,channel
 206,26-35,Tier 2,Conservative,0.2488,0.7,Online,F
 207,55+,Tier 1,Moderate,0.0781,4.9,Bank,M
 208,18-25,Tier 1,Aggressive,0.0838,1.6,Online,M
-209,46-55,Tier 3,Conservative,0.2232,0.4,Bank,None
+209,46-55,Tier 3,Conservative,0.2232,0.4,Bank,
 210,46-55,Tier 3,Conservative,0.5765,9.6,Bank,M
 211,46-55,Tier 3,Aggressive,0.7262,0.4,Online,M
 212,55+,Tier 1,Moderate,0.0302,2.4,Bank,F
-213,18-25,Tier 3,Aggressive,1.0216,1.0,Direct,None
+213,18-25,Tier 3,Aggressive,1.0216,1.0,Direct,
 214,26-35,Tier 1,Moderate,0.0473,0.5,Direct,M
 215,18-25,Tier 2,Moderate,0.6074,2.7,Online,M
 216,26-35,Tier 2,Aggressive,0.0524,1.3,Bank,M
@@ -248,7 +248,7 @@ investor_id,age_group,city_tier,risk_appetite,investment_cr,tenure_years,channel
 247,46-55,Tier 2,Aggressive,0.0251,0.6,Direct,F
 248,36-45,Tier 1,Moderate,0.0262,4.5,Online,M
 249,55+,Tier 3,Conservative,0.2173,7.2,Online,F
-250,26-35,Tier 1,Conservative,2.1449,5.3,Bank,None
+250,26-35,Tier 1,Conservative,2.1449,5.3,Bank,
 251,26-35,Tier 1,Moderate,0.218,0.9,Online,M
 252,26-35,Tier 1,Moderate,0.3897,0.3,Online,F
 253,55+,Tier 1,Conservative,2.2354,0.1,Online,M
@@ -313,7 +313,7 @@ investor_id,age_group,city_tier,risk_appetite,investment_cr,tenure_years,channel
 312,46-55,Tier 3,Aggressive,0.133,3.2,Direct,F
 313,26-35,Tier 3,Moderate,1.0733,4.5,Bank,M
 314,46-55,Tier 1,Conservative,0.3352,6.5,Direct,F
-315,26-35,Tier 3,Moderate,0.484,0.7,Bank,None
+315,26-35,Tier 3,Moderate,0.484,0.7,Bank,
 316,36-45,Tier 2,Conservative,0.5731,1.3,Online,F
 317,46-55,Tier 1,Conservative,0.0789,11.5,Direct,M
 318,55+,Tier 2,Aggressive,0.7643,6.5,Online,M
@@ -367,7 +367,7 @@ investor_id,age_group,city_tier,risk_appetite,investment_cr,tenure_years,channel
 366,46-55,Tier 1,Moderate,0.2481,0.5,Bank,M
 367,55+,Tier 3,Aggressive,0.6552,1.9,Direct,M
 368,46-55,Tier 1,Moderate,0.0565,1.1,Direct,M
-369,26-35,Tier 1,Moderate,0.192,1.3,Online,None
+369,26-35,Tier 1,Moderate,0.192,1.3,Online,
 370,46-55,Tier 2,Aggressive,0.0768,0.2,Online,F
 371,46-55,Tier 2,Conservative,0.5231,1.0,Bank,M
 372,26-35,Tier 2,Aggressive,0.3914,3.9,Bank,F
@@ -411,7 +411,7 @@ investor_id,age_group,city_tier,risk_appetite,investment_cr,tenure_years,channel
 410,55+,Tier 1,Moderate,0.0736,2.5,Direct,F
 411,36-45,Tier 1,Moderate,0.123,0.4,Direct,F
 412,26-35,Tier 3,Aggressive,0.4821,4.7,Online,F
-413,18-25,Tier 2,Conservative,1.6675,4.8,Bank,None
+413,18-25,Tier 2,Conservative,1.6675,4.8,Bank,
 414,36-45,Tier 2,Conservative,0.1736,0.5,Distributor,M
 415,55+,Tier 3,Aggressive,0.0118,1.2,Online,M
 416,46-55,Tier 1,Aggressive,0.0906,0.5,Distributor,M
@@ -446,7 +446,7 @@ investor_id,age_group,city_tier,risk_appetite,investment_cr,tenure_years,channel
 445,55+,Tier 2,Aggressive,1.1685,0.6,Bank,F
 446,26-35,Tier 1,Moderate,0.1474,1.5,Distributor,F
 447,46-55,Tier 1,Conservative,0.6596,0.8,Distributor,M
-448,36-45,Tier 1,Aggressive,0.5171,0.1,Online,None
+448,36-45,Tier 1,Aggressive,0.5171,0.1,Online,
 449,18-25,Tier 1,Moderate,0.0495,1.2,Distributor,F
 450,26-35,Tier 1,Moderate,0.9515,1.9,Bank,M
 451,55+,Tier 1,Conservative,0.9116,3.8,Direct,F
@@ -458,7 +458,7 @@ investor_id,age_group,city_tier,risk_appetite,investment_cr,tenure_years,channel
 457,46-55,Tier 1,Conservative,0.3949,0.7,Direct,M
 458,18-25,Tier 2,Moderate,0.1009,9.1,Online,M
 459,55+,Tier 1,Moderate,0.7515,0.1,Online,M
-460,55+,Tier 2,Conservative,1.0264,0.3,Direct,None
+460,55+,Tier 2,Conservative,1.0264,0.3,Direct,
 461,26-35,Tier 1,Conservative,0.3376,2.8,Distributor,M
 462,55+,Tier 3,Moderate,0.1158,4.3,Bank,M
 463,36-45,Tier 3,Moderate,0.9659,0.9,Direct,M
@@ -496,7 +496,7 @@ investor_id,age_group,city_tier,risk_appetite,investment_cr,tenure_years,channel
 495,18-25,Tier 3,Conservative,0.2376,0.6,Online,M
 496,36-45,Tier 1,Aggressive,0.2582,1.3,Bank,F
 497,46-55,Tier 1,Conservative,0.2427,1.7,Distributor,M
-498,26-35,Tier 1,Moderate,0.3658,9.7,Direct,None
+498,26-35,Tier 1,Moderate,0.3658,9.7,Direct,
 499,36-45,Tier 2,Conservative,0.0449,0.0,Online,F
 500,55+,Tier 3,Aggressive,0.3848,1.7,Direct,M
 501,55+,Tier 1,Aggressive,0.0528,0.5,Distributor,M
@@ -528,7 +528,7 @@ investor_id,age_group,city_tier,risk_appetite,investment_cr,tenure_years,channel
 527,18-25,Tier 3,Moderate,0.092,1.2,Bank,M
 528,18-25,Tier 1,Aggressive,0.8654,3.9,Direct,M
 529,55+,Tier 1,Moderate,0.0378,0.8,Online,F
-530,46-55,Tier 2,Moderate,1.0408,4.8,Bank,None
+530,46-55,Tier 2,Moderate,1.0408,4.8,Bank,
 531,46-55,Tier 1,Aggressive,0.2861,11.1,Online,M
 532,18-25,Tier 2,Moderate,0.501,1.0,Online,M
 533,26-35,Tier 1,Moderate,0.2963,0.3,Distributor,M
@@ -552,7 +552,7 @@ investor_id,age_group,city_tier,risk_appetite,investment_cr,tenure_years,channel
 551,46-55,Tier 1,Aggressive,0.2723,0.4,Bank,M
 552,46-55,Tier 3,Moderate,0.269,6.0,Online,F
 553,18-25,Tier 2,Conservative,0.5276,0.3,Direct,M
-554,18-25,Tier 2,Aggressive,0.8148,1.3,Bank,None
+554,18-25,Tier 2,Aggressive,0.8148,1.3,Bank,
 555,18-25,Tier 3,Moderate,0.8572,0.2,Online,M
 556,46-55,Tier 1,Conservative,0.0475,1.2,Direct,M
 557,55+,Tier 3,Conservative,0.6849,0.1,Direct,M
@@ -582,7 +582,7 @@ investor_id,age_group,city_tier,risk_appetite,investment_cr,tenure_years,channel
 581,55+,Tier 1,Moderate,0.1393,0.3,Bank,M
 582,18-25,Tier 1,Conservative,0.93,3.0,Bank,M
 583,36-45,Tier 1,Conservative,1.2503,0.6,Online,F
-584,46-55,Tier 3,Moderate,0.0703,4.4,Distributor,None
+584,46-55,Tier 3,Moderate,0.0703,4.4,Distributor,
 585,36-45,Tier 2,Aggressive,0.0217,4.5,Online,M
 586,26-35,Tier 2,Aggressive,0.3282,1.5,Distributor,M
 587,26-35,Tier 3,Aggressive,3.5395,2.3,Bank,M
@@ -594,7 +594,7 @@ investor_id,age_group,city_tier,risk_appetite,investment_cr,tenure_years,channel
 593,18-25,Tier 2,Conservative,0.3925,4.0,Direct,F
 594,26-35,Tier 3,Aggressive,0.3531,4.1,Bank,M
 595,18-25,Tier 2,Moderate,0.2807,1.9,Online,M
-596,55+,Tier 1,Aggressive,0.0744,0.1,Distributor,None
+596,55+,Tier 1,Aggressive,0.0744,0.1,Distributor,
 597,46-55,Tier 2,Moderate,0.1621,2.3,Bank,M
 598,26-35,Tier 2,Aggressive,0.7808,4.1,Bank,F
 599,55+,Tier 1,Aggressive,0.2429,1.0,Bank,M
@@ -624,7 +624,7 @@ investor_id,age_group,city_tier,risk_appetite,investment_cr,tenure_years,channel
 623,18-25,Tier 1,Moderate,0.5608,1.1,Distributor,M
 624,18-25,Tier 2,Conservative,0.5497,1.5,Bank,F
 625,55+,Tier 1,Moderate,0.341,1.6,Distributor,F
-626,26-35,Tier 1,Conservative,0.0525,1.0,Online,None
+626,26-35,Tier 1,Conservative,0.0525,1.0,Online,
 627,18-25,Tier 1,Conservative,0.0958,1.6,Bank,M
 628,18-25,Tier 3,Conservative,0.2774,0.7,Distributor,M
 629,36-45,Tier 1,Conservative,0.5041,0.8,Bank,F
@@ -677,7 +677,7 @@ investor_id,age_group,city_tier,risk_appetite,investment_cr,tenure_years,channel
 676,46-55,Tier 3,Aggressive,0.2909,0.8,Distributor,F
 677,46-55,Tier 3,Aggressive,1.1104,3.3,Distributor,F
 678,18-25,Tier 1,Aggressive,0.2817,2.7,Direct,M
-679,46-55,Tier 2,Conservative,0.3783,4.3,Online,None
+679,46-55,Tier 2,Conservative,0.3783,4.3,Online,
 680,55+,Tier 2,Conservative,0.194,10.7,Bank,M
 681,36-45,Tier 1,Moderate,0.9943,2.9,Bank,M
 682,18-25,Tier 2,Aggressive,0.0641,7.6,Direct,M
@@ -710,7 +710,7 @@ investor_id,age_group,city_tier,risk_appetite,investment_cr,tenure_years,channel
 709,18-25,Tier 2,Moderate,0.0624,3.1,Direct,F
 710,26-35,Tier 1,Aggressive,0.0097,0.0,Distributor,M
 711,18-25,Tier 1,Moderate,0.2886,1.7,Online,F
-712,36-45,Tier 2,Conservative,0.4891,0.5,Direct,None
+712,36-45,Tier 2,Conservative,0.4891,0.5,Direct,
 713,46-55,Tier 3,Moderate,0.2158,19.6,Distributor,F
 714,36-45,Tier 3,Aggressive,0.3665,0.5,Distributor,F
 715,26-35,Tier 1,Moderate,0.0385,5.0,Direct,F
@@ -1007,7 +1007,7 @@ investor_id,age_group,city_tier,risk_appetite,investment_cr,tenure_years,channel
 1006,55+,Tier 2,Aggressive,0.432,0.2,Bank,F
 1007,55+,Tier 3,Aggressive,0.553,2.1,Bank,M
 1008,26-35,Tier 1,Aggressive,0.6049,2.0,Bank,M
-1009,55+,Tier 2,Conservative,0.0064,6.9,Distributor,None
+1009,55+,Tier 2,Conservative,0.0064,6.9,Distributor,
 1010,26-35,Tier 3,Moderate,0.3507,0.4,Distributor,F
 1011,36-45,Tier 2,Moderate,0.7177,0.8,Direct,F
 1012,26-35,Tier 1,Conservative,1.2911,0.9,Online,M
@@ -1031,11 +1031,11 @@ investor_id,age_group,city_tier,risk_appetite,investment_cr,tenure_years,channel
 1030,55+,Tier 3,Moderate,0.442,1.1,Distributor,M
 1031,46-55,Tier 1,Moderate,1.0653,11.8,Bank,M
 1032,55+,Tier 1,Aggressive,0.3517,1.7,Bank,M
-1033,46-55,Tier 3,Moderate,0.1838,2.8,Distributor,None
+1033,46-55,Tier 3,Moderate,0.1838,2.8,Distributor,
 1034,46-55,Tier 1,Conservative,1.0668,1.8,Online,M
 1035,18-25,Tier 2,Moderate,1.9096,4.6,Bank,F
 1036,26-35,Tier 1,Conservative,0.5239,8.0,Online,F
-1037,26-35,Tier 1,Aggressive,0.7338,3.3,Bank,None
+1037,26-35,Tier 1,Aggressive,0.7338,3.3,Bank,
 1038,36-45,Tier 1,Conservative,0.4901,0.6,Online,F
 1039,18-25,Tier 3,Aggressive,0.0154,2.6,Distributor,F
 1040,26-35,Tier 3,Conservative,0.2728,1.6,Bank,M
@@ -1062,7 +1062,7 @@ investor_id,age_group,city_tier,risk_appetite,investment_cr,tenure_years,channel
 1061,26-35,Tier 2,Moderate,0.5894,1.0,Direct,M
 1062,18-25,Tier 2,Conservative,0.2619,0.3,Distributor,M
 1063,36-45,Tier 3,Aggressive,0.4924,1.2,Bank,M
-1064,18-25,Tier 1,Conservative,0.7845,0.9,Distributor,None
+1064,18-25,Tier 1,Conservative,0.7845,0.9,Distributor,
 1065,55+,Tier 3,Moderate,0.6376,1.7,Online,M
 1066,26-35,Tier 2,Conservative,0.3716,0.2,Online,M
 1067,46-55,Tier 2,Aggressive,0.6593,4.6,Bank,M
@@ -1125,7 +1125,7 @@ investor_id,age_group,city_tier,risk_appetite,investment_cr,tenure_years,channel
 1124,18-25,Tier 1,Aggressive,0.1144,0.0,Bank,M
 1125,18-25,Tier 3,Moderate,0.6068,2.4,Online,F
 1126,55+,Tier 1,Conservative,0.8847,5.2,Distributor,M
-1127,26-35,Tier 3,Moderate,0.6187,3.8,Online,None
+1127,26-35,Tier 3,Moderate,0.6187,3.8,Online,
 1128,46-55,Tier 1,Moderate,0.2124,1.0,Online,F
 1129,26-35,Tier 2,Moderate,0.2347,7.6,Bank,M
 1130,26-35,Tier 1,Aggressive,0.649,1.1,Distributor,F
@@ -1140,12 +1140,12 @@ investor_id,age_group,city_tier,risk_appetite,investment_cr,tenure_years,channel
 1139,46-55,Tier 1,Aggressive,0.1935,2.8,Distributor,F
 1140,46-55,Tier 2,Conservative,0.2546,0.4,Direct,M
 1141,46-55,Tier 1,Moderate,0.6193,6.7,Direct,M
-1142,18-25,Tier 2,Conservative,0.1318,2.0,Online,None
+1142,18-25,Tier 2,Conservative,0.1318,2.0,Online,
 1143,26-35,Tier 1,Moderate,0.3841,2.5,Direct,M
 1144,46-55,Tier 1,Moderate,0.1629,0.1,Direct,F
 1145,18-25,Tier 2,Moderate,0.6412,1.0,Online,M
 1146,55+,Tier 1,Aggressive,0.1303,3.1,Distributor,F
-1147,26-35,Tier 2,Conservative,0.5772,4.2,Online,None
+1147,26-35,Tier 2,Conservative,0.5772,4.2,Online,
 1148,36-45,Tier 2,Aggressive,0.0694,3.4,Online,M
 1149,36-45,Tier 1,Conservative,0.4494,1.4,Online,F
 1150,18-25,Tier 3,Aggressive,0.3954,2.8,Direct,F
@@ -1256,7 +1256,7 @@ investor_id,age_group,city_tier,risk_appetite,investment_cr,tenure_years,channel
 1255,26-35,Tier 1,Aggressive,0.2178,4.0,Direct,M
 1256,26-35,Tier 2,Aggressive,0.5765,2.7,Distributor,F
 1257,46-55,Tier 3,Moderate,0.8641,0.4,Bank,F
-1258,36-45,Tier 1,Moderate,0.0106,5.5,Direct,None
+1258,36-45,Tier 1,Moderate,0.0106,5.5,Direct,
 1259,18-25,Tier 3,Aggressive,0.4811,3.3,Bank,F
 1260,26-35,Tier 1,Conservative,0.815,3.2,Online,M
 1261,26-35,Tier 3,Aggressive,0.1939,1.7,Distributor,M
@@ -1329,7 +1329,7 @@ investor_id,age_group,city_tier,risk_appetite,investment_cr,tenure_years,channel
 1328,46-55,Tier 2,Conservative,0.0268,5.5,Distributor,F
 1329,46-55,Tier 1,Conservative,0.0625,5.7,Online,M
 1330,55+,Tier 3,Aggressive,0.0374,1.3,Direct,M
-1331,26-35,Tier 2,Conservative,0.1249,2.1,Bank,None
+1331,26-35,Tier 2,Conservative,0.1249,2.1,Bank,
 1332,36-45,Tier 1,Moderate,0.3411,1.6,Online,M
 1333,36-45,Tier 2,Aggressive,0.0489,11.3,Distributor,M
 1334,55+,Tier 1,Moderate,0.5947,4.4,Distributor,M
@@ -1338,7 +1338,7 @@ investor_id,age_group,city_tier,risk_appetite,investment_cr,tenure_years,channel
 1337,46-55,Tier 2,Moderate,0.078,1.6,Distributor,M
 1338,26-35,Tier 2,Aggressive,0.1538,2.9,Bank,M
 1339,55+,Tier 2,Moderate,0.587,0.8,Direct,M
-1340,18-25,Tier 1,Conservative,0.4414,2.3,Online,None
+1340,18-25,Tier 1,Conservative,0.4414,2.3,Online,
 1341,55+,Tier 3,Aggressive,0.0454,6.5,Bank,F
 1342,18-25,Tier 1,Aggressive,0.1019,0.2,Bank,M
 1343,18-25,Tier 1,Moderate,0.7684,0.0,Direct,F
@@ -1346,7 +1346,7 @@ investor_id,age_group,city_tier,risk_appetite,investment_cr,tenure_years,channel
 1345,18-25,Tier 1,Moderate,1.0267,0.9,Direct,F
 1346,55+,Tier 2,Moderate,0.1978,0.3,Online,M
 1347,46-55,Tier 2,Aggressive,0.3862,2.0,Online,F
-1348,55+,Tier 1,Conservative,0.7076,0.7,Bank,None
+1348,55+,Tier 1,Conservative,0.7076,0.7,Bank,
 1349,18-25,Tier 2,Aggressive,0.8475,0.0,Distributor,F
 1350,46-55,Tier 2,Moderate,0.1415,2.5,Direct,F
 1351,55+,Tier 1,Conservative,0.7408,2.9,Bank,M
@@ -1369,9 +1369,9 @@ investor_id,age_group,city_tier,risk_appetite,investment_cr,tenure_years,channel
 1368,26-35,Tier 1,Conservative,0.3021,0.4,Online,F
 1369,18-25,Tier 3,Conservative,1.5386,1.4,Online,M
 1370,26-35,Tier 1,Aggressive,1.3082,3.0,Direct,F
-1371,26-35,Tier 1,Aggressive,0.5996,0.4,Online,None
+1371,26-35,Tier 1,Aggressive,0.5996,0.4,Online,
 1372,18-25,Tier 1,Moderate,0.7317,2.5,Online,M
-1373,55+,Tier 2,Aggressive,0.9174,6.7,Online,None
+1373,55+,Tier 2,Aggressive,0.9174,6.7,Online,
 1374,55+,Tier 3,Conservative,1.5417,1.9,Online,M
 1375,46-55,Tier 1,Conservative,0.3464,1.8,Online,M
 1376,18-25,Tier 1,Moderate,1.7031,2.4,Bank,M
@@ -1421,7 +1421,7 @@ investor_id,age_group,city_tier,risk_appetite,investment_cr,tenure_years,channel
 1420,18-25,Tier 1,Moderate,0.6054,7.5,Bank,M
 1421,55+,Tier 2,Aggressive,1.3042,2.4,Direct,M
 1422,36-45,Tier 3,Aggressive,0.9696,2.3,Online,F
-1423,36-45,Tier 1,Aggressive,0.8694,11.4,Direct,None
+1423,36-45,Tier 1,Aggressive,0.8694,11.4,Direct,
 1424,18-25,Tier 1,Aggressive,0.4074,1.2,Bank,M
 1425,26-35,Tier 1,Moderate,0.061,1.3,Direct,M
 1426,26-35,Tier 1,Moderate,0.515,5.1,Direct,F
@@ -1490,7 +1490,7 @@ investor_id,age_group,city_tier,risk_appetite,investment_cr,tenure_years,channel
 1489,18-25,Tier 3,Aggressive,0.1721,10.1,Online,M
 1490,55+,Tier 1,Moderate,1.3736,0.6,Distributor,M
 1491,26-35,Tier 3,Aggressive,1.2808,3.0,Direct,F
-1492,18-25,Tier 3,Moderate,0.7093,1.5,Online,None
+1492,18-25,Tier 3,Moderate,0.7093,1.5,Online,
 1493,36-45,Tier 1,Conservative,0.5959,2.0,Distributor,F
 1494,18-25,Tier 1,Aggressive,0.2815,1.8,Bank,F
 1495,26-35,Tier 1,Moderate,0.5947,5.1,Distributor,F
@@ -1503,7 +1503,7 @@ investor_id,age_group,city_tier,risk_appetite,investment_cr,tenure_years,channel
 1502,36-45,Tier 2,Moderate,0.2109,0.3,Distributor,M
 1503,18-25,Tier 2,Aggressive,0.1693,3.9,Direct,M
 1504,46-55,Tier 3,Moderate,1.9797,3.7,Bank,M
-1505,18-25,Tier 1,Aggressive,0.512,6.1,Direct,None
+1505,18-25,Tier 1,Aggressive,0.512,6.1,Direct,
 1506,18-25,Tier 2,Moderate,0.5725,2.2,Distributor,F
 1507,18-25,Tier 3,Moderate,0.2035,0.6,Bank,M
 1508,18-25,Tier 1,Conservative,0.458,4.7,Direct,M
@@ -1514,7 +1514,7 @@ investor_id,age_group,city_tier,risk_appetite,investment_cr,tenure_years,channel
 1513,46-55,Tier 1,Moderate,0.6533,0.1,Bank,F
 1514,55+,Tier 1,Aggressive,0.546,1.1,Bank,F
 1515,26-35,Tier 3,Moderate,0.2797,0.2,Online,F
-1516,55+,Tier 1,Conservative,1.1415,11.3,Direct,None
+1516,55+,Tier 1,Conservative,1.1415,11.3,Direct,
 1517,26-35,Tier 1,Aggressive,0.6038,1.9,Bank,M
 1518,46-55,Tier 2,Moderate,1.3458,1.6,Online,M
 1519,26-35,Tier 1,Aggressive,0.0676,3.7,Direct,M
@@ -1547,7 +1547,7 @@ investor_id,age_group,city_tier,risk_appetite,investment_cr,tenure_years,channel
 1546,26-35,Tier 1,Aggressive,0.2097,3.1,Direct,M
 1547,18-25,Tier 3,Moderate,0.0217,1.3,Bank,M
 1548,36-45,Tier 3,Moderate,0.3153,0.2,Distributor,F
-1549,18-25,Tier 1,Aggressive,1.4047,2.9,Distributor,None
+1549,18-25,Tier 1,Aggressive,1.4047,2.9,Distributor,
 1550,46-55,Tier 2,Aggressive,0.1012,10.2,Online,F
 1551,55+,Tier 2,Aggressive,2.1381,0.1,Online,F
 1552,36-45,Tier 1,Conservative,0.3188,0.4,Distributor,F
@@ -1556,7 +1556,7 @@ investor_id,age_group,city_tier,risk_appetite,investment_cr,tenure_years,channel
 1555,26-35,Tier 3,Moderate,0.6746,0.6,Bank,F
 1556,55+,Tier 1,Moderate,2.4677,1.2,Online,M
 1557,36-45,Tier 2,Moderate,0.439,0.3,Online,M
-1558,36-45,Tier 3,Conservative,0.7266,0.6,Direct,None
+1558,36-45,Tier 3,Conservative,0.7266,0.6,Direct,
 1559,36-45,Tier 3,Moderate,0.2886,0.3,Distributor,M
 1560,36-45,Tier 1,Conservative,0.679,1.6,Distributor,M
 1561,18-25,Tier 1,Conservative,0.0245,3.7,Online,F
@@ -1575,7 +1575,7 @@ investor_id,age_group,city_tier,risk_appetite,investment_cr,tenure_years,channel
 1574,18-25,Tier 1,Aggressive,0.4581,0.4,Direct,M
 1575,18-25,Tier 1,Moderate,0.5106,0.8,Direct,M
 1576,46-55,Tier 1,Conservative,0.3627,0.4,Direct,F
-1577,46-55,Tier 1,Moderate,0.1698,2.7,Direct,None
+1577,46-55,Tier 1,Moderate,0.1698,2.7,Direct,
 1578,26-35,Tier 2,Moderate,0.3486,1.1,Distributor,M
 1579,55+,Tier 3,Aggressive,0.4142,0.5,Online,F
 1580,36-45,Tier 2,Conservative,0.2596,5.1,Bank,M
@@ -1616,7 +1616,7 @@ investor_id,age_group,city_tier,risk_appetite,investment_cr,tenure_years,channel
 1615,26-35,Tier 1,Conservative,1.2493,1.7,Direct,F
 1616,46-55,Tier 1,Conservative,0.4137,2.8,Online,M
 1617,55+,Tier 1,Conservative,0.4957,0.2,Distributor,F
-1618,18-25,Tier 1,Conservative,0.6187,4.5,Distributor,None
+1618,18-25,Tier 1,Conservative,0.6187,4.5,Distributor,
 1619,26-35,Tier 1,Aggressive,0.0895,3.7,Online,F
 1620,36-45,Tier 3,Moderate,0.4142,0.5,Online,M
 1621,55+,Tier 1,Moderate,1.5225,0.0,Distributor,F
@@ -1641,7 +1641,7 @@ investor_id,age_group,city_tier,risk_appetite,investment_cr,tenure_years,channel
 1640,55+,Tier 3,Conservative,0.4839,2.7,Distributor,M
 1641,46-55,Tier 1,Aggressive,0.2333,3.5,Online,F
 1642,18-25,Tier 2,Conservative,0.0089,2.3,Bank,M
-1643,26-35,Tier 1,Conservative,0.2379,7.0,Direct,None
+1643,26-35,Tier 1,Conservative,0.2379,7.0,Direct,
 1644,26-35,Tier 2,Conservative,0.0657,1.0,Online,M
 1645,46-55,Tier 1,Aggressive,0.3273,0.1,Bank,M
 1646,26-35,Tier 2,Conservative,0.3057,2.2,Direct,F
@@ -1661,7 +1661,7 @@ investor_id,age_group,city_tier,risk_appetite,investment_cr,tenure_years,channel
 1660,36-45,Tier 1,Moderate,0.4506,4.7,Online,M
 1661,36-45,Tier 1,Moderate,0.6133,0.4,Bank,M
 1662,46-55,Tier 3,Aggressive,0.1383,0.5,Bank,F
-1663,18-25,Tier 3,Aggressive,0.0393,1.4,Distributor,None
+1663,18-25,Tier 3,Aggressive,0.0393,1.4,Distributor,
 1664,36-45,Tier 2,Conservative,0.5581,0.4,Bank,M
 1665,18-25,Tier 1,Aggressive,0.6383,3.0,Distributor,F
 1666,36-45,Tier 1,Aggressive,0.0619,3.2,Online,F
@@ -1728,7 +1728,7 @@ investor_id,age_group,city_tier,risk_appetite,investment_cr,tenure_years,channel
 1727,26-35,Tier 3,Moderate,0.4808,3.0,Bank,M
 1728,26-35,Tier 1,Aggressive,0.1247,2.4,Online,F
 1729,26-35,Tier 2,Moderate,0.2533,4.2,Online,M
-1730,55+,Tier 1,Conservative,0.5887,2.6,Bank,None
+1730,55+,Tier 1,Conservative,0.5887,2.6,Bank,
 1731,26-35,Tier 1,Conservative,0.7156,1.2,Bank,F
 1732,46-55,Tier 2,Aggressive,0.694,7.3,Bank,M
 1733,55+,Tier 1,Moderate,0.4356,0.7,Direct,M
@@ -1763,7 +1763,7 @@ investor_id,age_group,city_tier,risk_appetite,investment_cr,tenure_years,channel
 1762,26-35,Tier 2,Aggressive,0.0275,0.7,Direct,F
 1763,36-45,Tier 1,Conservative,0.3185,2.2,Direct,F
 1764,36-45,Tier 2,Conservative,0.0987,6.8,Direct,F
-1765,26-35,Tier 1,Moderate,0.6386,4.7,Direct,None
+1765,26-35,Tier 1,Moderate,0.6386,4.7,Direct,
 1766,55+,Tier 1,Moderate,0.1595,3.3,Direct,F
 1767,18-25,Tier 1,Conservative,0.2421,2.4,Online,F
 1768,36-45,Tier 2,Aggressive,0.2642,2.9,Online,F
@@ -1771,7 +1771,7 @@ investor_id,age_group,city_tier,risk_appetite,investment_cr,tenure_years,channel
 1770,36-45,Tier 2,Aggressive,0.5373,2.0,Distributor,M
 1771,46-55,Tier 2,Aggressive,0.7062,10.9,Bank,M
 1772,46-55,Tier 1,Conservative,0.4048,5.2,Direct,F
-1773,46-55,Tier 2,Aggressive,1.0912,3.5,Direct,None
+1773,46-55,Tier 2,Aggressive,1.0912,3.5,Direct,
 1774,18-25,Tier 2,Moderate,0.216,1.6,Direct,M
 1775,55+,Tier 1,Aggressive,0.2514,4.2,Bank,M
 1776,36-45,Tier 1,Aggressive,0.0306,1.8,Distributor,F
@@ -1782,7 +1782,7 @@ investor_id,age_group,city_tier,risk_appetite,investment_cr,tenure_years,channel
 1781,18-25,Tier 1,Conservative,0.3419,2.7,Online,M
 1782,26-35,Tier 2,Conservative,0.3125,0.9,Direct,M
 1783,55+,Tier 2,Moderate,0.3328,0.2,Distributor,M
-1784,55+,Tier 2,Aggressive,0.1543,6.8,Direct,None
+1784,55+,Tier 2,Aggressive,0.1543,6.8,Direct,
 1785,18-25,Tier 2,Conservative,2.7786,0.9,Direct,M
 1786,55+,Tier 2,Moderate,0.272,3.5,Distributor,M
 1787,18-25,Tier 2,Conservative,0.2232,2.0,Distributor,M
@@ -1830,7 +1830,7 @@ investor_id,age_group,city_tier,risk_appetite,investment_cr,tenure_years,channel
 1829,36-45,Tier 3,Aggressive,0.5921,0.7,Direct,F
 1830,36-45,Tier 1,Moderate,1.0004,1.7,Direct,F
 1831,18-25,Tier 2,Aggressive,0.3949,0.4,Online,M
-1832,46-55,Tier 1,Moderate,0.2998,0.3,Online,None
+1832,46-55,Tier 1,Moderate,0.2998,0.3,Online,
 1833,36-45,Tier 1,Moderate,0.2035,0.3,Online,F
 1834,36-45,Tier 1,Conservative,0.0734,2.3,Direct,M
 1835,36-45,Tier 2,Conservative,0.4225,1.6,Bank,M
@@ -1886,7 +1886,7 @@ investor_id,age_group,city_tier,risk_appetite,investment_cr,tenure_years,channel
 1885,36-45,Tier 2,Moderate,0.1265,0.9,Direct,F
 1886,36-45,Tier 3,Conservative,0.0553,0.6,Distributor,F
 1887,26-35,Tier 3,Moderate,0.9922,2.3,Direct,M
-1888,46-55,Tier 1,Conservative,0.8823,2.6,Distributor,None
+1888,46-55,Tier 1,Conservative,0.8823,2.6,Distributor,
 1889,26-35,Tier 2,Conservative,0.1368,1.6,Direct,F
 1890,55+,Tier 2,Conservative,0.3312,0.3,Bank,F
 1891,18-25,Tier 1,Conservative,0.2513,5.9,Distributor,F
@@ -2024,7 +2024,7 @@ investor_id,age_group,city_tier,risk_appetite,investment_cr,tenure_years,channel
 2023,18-25,Tier 3,Moderate,0.2198,2.7,Online,M
 2024,18-25,Tier 2,Moderate,1.4477,2.8,Distributor,M
 2025,55+,Tier 1,Conservative,0.4781,2.6,Direct,M
-2026,55+,Tier 1,Conservative,1.793,1.1,Direct,None
+2026,55+,Tier 1,Conservative,1.793,1.1,Direct,
 2027,55+,Tier 1,Aggressive,0.2113,2.7,Distributor,F
 2028,18-25,Tier 1,Conservative,0.2821,5.9,Direct,F
 2029,26-35,Tier 1,Moderate,0.385,2.4,Direct,F
@@ -2095,7 +2095,7 @@ investor_id,age_group,city_tier,risk_appetite,investment_cr,tenure_years,channel
 2094,26-35,Tier 3,Conservative,0.147,6.3,Direct,M
 2095,55+,Tier 2,Conservative,0.0743,12.3,Online,F
 2096,18-25,Tier 2,Moderate,0.0585,5.4,Distributor,M
-2097,55+,Tier 1,Moderate,0.7115,0.1,Direct,None
+2097,55+,Tier 1,Moderate,0.7115,0.1,Direct,
 2098,55+,Tier 3,Moderate,0.0913,2.4,Direct,M
 2099,55+,Tier 2,Aggressive,0.4787,1.9,Distributor,M
 2100,55+,Tier 1,Aggressive,0.1948,6.0,Online,F
@@ -2277,11 +2277,11 @@ investor_id,age_group,city_tier,risk_appetite,investment_cr,tenure_years,channel
 2276,26-35,Tier 3,Moderate,0.2995,5.8,Distributor,M
 2277,46-55,Tier 1,Moderate,0.437,1.8,Distributor,F
 2278,18-25,Tier 3,Aggressive,0.2052,4.8,Direct,M
-2279,36-45,Tier 1,Moderate,0.1602,0.8,Direct,None
+2279,36-45,Tier 1,Moderate,0.1602,0.8,Direct,
 2280,26-35,Tier 2,Aggressive,0.2587,2.7,Distributor,M
 2281,26-35,Tier 2,Conservative,0.34,2.2,Distributor,F
 2282,36-45,Tier 2,Conservative,0.4601,4.2,Bank,M
-2283,18-25,Tier 3,Moderate,0.609,1.5,Distributor,None
+2283,18-25,Tier 3,Moderate,0.609,1.5,Distributor,
 2284,18-25,Tier 1,Aggressive,0.0051,1.6,Direct,M
 2285,26-35,Tier 1,Moderate,0.3685,1.4,Direct,M
 2286,26-35,Tier 1,Aggressive,0.1857,3.2,Direct,M
@@ -2364,7 +2364,7 @@ investor_id,age_group,city_tier,risk_appetite,investment_cr,tenure_years,channel
 2363,26-35,Tier 2,Aggressive,0.121,1.1,Distributor,F
 2364,18-25,Tier 2,Conservative,1.5738,0.3,Direct,F
 2365,26-35,Tier 2,Conservative,0.2977,1.7,Online,F
-2366,26-35,Tier 3,Moderate,0.2995,2.2,Direct,None
+2366,26-35,Tier 3,Moderate,0.2995,2.2,Direct,
 2367,36-45,Tier 3,Conservative,0.1875,3.5,Distributor,M
 2368,26-35,Tier 2,Conservative,0.7724,0.4,Bank,M
 2369,26-35,Tier 1,Aggressive,0.042,0.6,Bank,F
@@ -2383,7 +2383,7 @@ investor_id,age_group,city_tier,risk_appetite,investment_cr,tenure_years,channel
 2382,26-35,Tier 1,Aggressive,0.3504,7.9,Direct,F
 2383,36-45,Tier 1,Moderate,1.2549,14.2,Online,M
 2384,46-55,Tier 1,Moderate,0.0271,0.3,Online,M
-2385,26-35,Tier 2,Aggressive,0.9133,0.6,Online,None
+2385,26-35,Tier 2,Aggressive,0.9133,0.6,Online,
 2386,18-25,Tier 1,Moderate,0.2927,1.6,Bank,M
 2387,18-25,Tier 3,Conservative,0.3775,2.8,Bank,M
 2388,46-55,Tier 1,Aggressive,0.3187,6.0,Distributor,M
@@ -2474,7 +2474,7 @@ investor_id,age_group,city_tier,risk_appetite,investment_cr,tenure_years,channel
 2473,55+,Tier 1,Conservative,0.6714,5.4,Direct,M
 2474,36-45,Tier 3,Conservative,0.3582,0.0,Distributor,F
 2475,36-45,Tier 3,Aggressive,1.1469,3.9,Bank,F
-2476,18-25,Tier 1,Aggressive,0.3693,9.2,Bank,None
+2476,18-25,Tier 1,Aggressive,0.3693,9.2,Bank,
 2477,55+,Tier 1,Conservative,0.1938,5.6,Distributor,M
 2478,36-45,Tier 2,Conservative,0.1323,2.6,Bank,M
 2479,46-55,Tier 2,Aggressive,0.4186,1.6,Online,F
@@ -2488,7 +2488,7 @@ investor_id,age_group,city_tier,risk_appetite,investment_cr,tenure_years,channel
 2487,55+,Tier 3,Aggressive,0.4396,10.5,Bank,F
 2488,36-45,Tier 3,Conservative,0.5786,6.8,Direct,M
 2489,55+,Tier 1,Moderate,1.0586,0.8,Direct,F
-2490,26-35,Tier 2,Aggressive,0.2617,3.6,Bank,None
+2490,26-35,Tier 2,Aggressive,0.2617,3.6,Bank,
 2491,26-35,Tier 1,Aggressive,0.0993,5.7,Direct,F
 2492,18-25,Tier 2,Moderate,0.3734,1.6,Direct,F
 2493,55+,Tier 1,Moderate,0.7941,0.4,Direct,M
@@ -2513,7 +2513,7 @@ investor_id,age_group,city_tier,risk_appetite,investment_cr,tenure_years,channel
 2512,18-25,Tier 3,Moderate,0.2595,0.2,Online,F
 2513,26-35,Tier 1,Aggressive,0.1827,2.1,Direct,M
 2514,26-35,Tier 2,Aggressive,1.7152,4.2,Bank,M
-2515,36-45,Tier 1,Aggressive,0.7004,0.6,Distributor,None
+2515,36-45,Tier 1,Aggressive,0.7004,0.6,Distributor,
 2516,36-45,Tier 1,Aggressive,0.1377,4.3,Direct,F
 2517,36-45,Tier 3,Aggressive,0.7638,4.2,Distributor,M
 2518,26-35,Tier 1,Conservative,1.5038,3.2,Online,F
@@ -2592,7 +2592,7 @@ investor_id,age_group,city_tier,risk_appetite,investment_cr,tenure_years,channel
 2591,26-35,Tier 1,Moderate,0.2085,2.8,Bank,M
 2592,26-35,Tier 1,Conservative,1.2723,2.0,Distributor,F
 2593,46-55,Tier 1,Conservative,0.2028,6.5,Direct,M
-2594,46-55,Tier 2,Aggressive,0.0315,2.5,Online,None
+2594,46-55,Tier 2,Aggressive,0.0315,2.5,Online,
 2595,55+,Tier 1,Aggressive,0.0097,8.5,Distributor,F
 2596,18-25,Tier 1,Aggressive,0.4298,1.5,Online,M
 2597,18-25,Tier 1,Aggressive,0.403,3.8,Distributor,M
@@ -2676,7 +2676,7 @@ investor_id,age_group,city_tier,risk_appetite,investment_cr,tenure_years,channel
 2675,46-55,Tier 3,Moderate,0.6579,2.7,Online,M
 2676,26-35,Tier 3,Conservative,0.5971,1.9,Online,F
 2677,55+,Tier 3,Conservative,0.4141,0.6,Direct,M
-2678,55+,Tier 1,Moderate,0.1906,4.9,Online,None
+2678,55+,Tier 1,Moderate,0.1906,4.9,Online,
 2679,18-25,Tier 3,Aggressive,1.044,6.8,Distributor,M
 2680,55+,Tier 3,Moderate,0.6537,2.3,Direct,M
 2681,46-55,Tier 2,Moderate,0.7026,3.3,Direct,M
@@ -2687,7 +2687,7 @@ investor_id,age_group,city_tier,risk_appetite,investment_cr,tenure_years,channel
 2686,36-45,Tier 1,Moderate,1.4166,3.3,Bank,M
 2687,46-55,Tier 3,Conservative,0.0225,7.8,Online,F
 2688,46-55,Tier 3,Moderate,0.6075,7.0,Online,F
-2689,36-45,Tier 3,Moderate,0.0774,1.9,Bank,None
+2689,36-45,Tier 3,Moderate,0.0774,1.9,Bank,
 2690,26-35,Tier 2,Conservative,0.1783,3.0,Online,M
 2691,36-45,Tier 1,Moderate,1.2507,3.8,Bank,F
 2692,18-25,Tier 1,Moderate,0.2193,1.4,Distributor,M
@@ -2706,7 +2706,7 @@ investor_id,age_group,city_tier,risk_appetite,investment_cr,tenure_years,channel
 2705,36-45,Tier 1,Moderate,0.3833,5.6,Online,F
 2706,18-25,Tier 1,Conservative,0.0512,2.8,Distributor,F
 2707,46-55,Tier 1,Conservative,1.3175,2.3,Bank,F
-2708,36-45,Tier 1,Conservative,0.0325,0.4,Online,None
+2708,36-45,Tier 1,Conservative,0.0325,0.4,Online,
 2709,26-35,Tier 1,Conservative,0.1032,0.3,Bank,M
 2710,26-35,Tier 1,Moderate,0.1029,0.6,Distributor,F
 2711,46-55,Tier 1,Aggressive,1.0246,0.5,Direct,M
@@ -2787,7 +2787,7 @@ investor_id,age_group,city_tier,risk_appetite,investment_cr,tenure_years,channel
 2786,46-55,Tier 1,Moderate,0.0461,1.0,Distributor,M
 2787,46-55,Tier 1,Conservative,0.1869,0.8,Online,M
 2788,46-55,Tier 1,Aggressive,0.0981,5.8,Distributor,M
-2789,18-25,Tier 2,Aggressive,0.0687,1.6,Bank,None
+2789,18-25,Tier 2,Aggressive,0.0687,1.6,Bank,
 2790,55+,Tier 1,Aggressive,0.9003,0.3,Online,M
 2791,36-45,Tier 3,Conservative,0.9331,1.3,Distributor,F
 2792,36-45,Tier 2,Aggressive,0.0314,1.4,Distributor,M
@@ -2797,7 +2797,7 @@ investor_id,age_group,city_tier,risk_appetite,investment_cr,tenure_years,channel
 2796,18-25,Tier 3,Aggressive,0.128,0.3,Online,F
 2797,26-35,Tier 1,Moderate,0.3452,3.3,Distributor,F
 2798,55+,Tier 1,Conservative,0.3012,2.0,Online,M
-2799,46-55,Tier 3,Conservative,0.0221,3.7,Online,None
+2799,46-55,Tier 3,Conservative,0.0221,3.7,Online,
 2800,46-55,Tier 1,Aggressive,0.3614,0.5,Bank,F
 2801,36-45,Tier 2,Aggressive,0.2445,0.7,Distributor,M
 2802,18-25,Tier 3,Moderate,0.1136,1.0,Distributor,F
@@ -2834,7 +2834,7 @@ investor_id,age_group,city_tier,risk_appetite,investment_cr,tenure_years,channel
 2833,18-25,Tier 1,Conservative,0.5479,0.4,Direct,M
 2834,26-35,Tier 3,Moderate,0.6946,1.7,Direct,F
 2835,18-25,Tier 1,Aggressive,0.7529,1.8,Bank,F
-2836,36-45,Tier 2,Moderate,0.1695,5.5,Distributor,None
+2836,36-45,Tier 2,Moderate,0.1695,5.5,Distributor,
 2837,18-25,Tier 3,Moderate,0.0344,2.0,Bank,F
 2838,26-35,Tier 1,Moderate,0.4084,0.4,Direct,F
 2839,18-25,Tier 2,Moderate,0.7675,1.8,Bank,M
@@ -2877,7 +2877,7 @@ investor_id,age_group,city_tier,risk_appetite,investment_cr,tenure_years,channel
 2876,55+,Tier 1,Conservative,0.3233,0.0,Direct,F
 2877,36-45,Tier 1,Conservative,0.1088,3.2,Online,F
 2878,46-55,Tier 1,Conservative,0.3603,4.5,Online,M
-2879,36-45,Tier 2,Conservative,2.2268,2.1,Distributor,None
+2879,36-45,Tier 2,Conservative,2.2268,2.1,Distributor,
 2880,26-35,Tier 1,Moderate,0.0266,3.7,Online,F
 2881,26-35,Tier 3,Aggressive,0.2787,2.4,Bank,M
 2882,26-35,Tier 1,Aggressive,0.4186,6.7,Bank,M
@@ -2885,8 +2885,8 @@ investor_id,age_group,city_tier,risk_appetite,investment_cr,tenure_years,channel
 2884,55+,Tier 2,Conservative,0.2782,1.3,Direct,M
 2885,36-45,Tier 1,Conservative,0.2468,0.7,Bank,F
 2886,55+,Tier 1,Moderate,0.6093,0.9,Direct,F
-2887,46-55,Tier 3,Aggressive,0.5102,10.0,Distributor,None
-2888,46-55,Tier 3,Moderate,0.6417,1.7,Direct,None
+2887,46-55,Tier 3,Aggressive,0.5102,10.0,Distributor,
+2888,46-55,Tier 3,Moderate,0.6417,1.7,Direct,
 2889,46-55,Tier 3,Conservative,0.7407,2.5,Bank,M
 2890,55+,Tier 1,Conservative,1.1579,3.9,Distributor,M
 2891,36-45,Tier 1,Moderate,0.1438,8.1,Bank,M
@@ -3182,11 +3182,11 @@ investor_id,age_group,city_tier,risk_appetite,investment_cr,tenure_years,channel
 3181,26-35,Tier 3,Conservative,0.0861,0.1,Online,F
 3182,36-45,Tier 1,Moderate,2.012,4.8,Direct,M
 3183,55+,Tier 1,Moderate,0.0732,1.6,Online,F
-3184,36-45,Tier 2,Conservative,0.5625,1.7,Direct,None
+3184,36-45,Tier 2,Conservative,0.5625,1.7,Direct,
 3185,46-55,Tier 3,Moderate,0.0422,1.4,Bank,F
 3186,55+,Tier 1,Conservative,0.4235,6.3,Direct,M
-3187,26-35,Tier 1,Aggressive,0.0543,4.0,Online,None
-3188,26-35,Tier 1,Moderate,0.6864,2.0,Distributor,None
+3187,26-35,Tier 1,Aggressive,0.0543,4.0,Online,
+3188,26-35,Tier 1,Moderate,0.6864,2.0,Distributor,
 3189,18-25,Tier 1,Moderate,1.9734,3.1,Online,M
 3190,36-45,Tier 1,Moderate,0.1764,7.5,Direct,F
 3191,46-55,Tier 1,Moderate,1.3882,1.7,Direct,F
@@ -3280,7 +3280,7 @@ investor_id,age_group,city_tier,risk_appetite,investment_cr,tenure_years,channel
 3279,36-45,Tier 1,Conservative,0.1351,4.4,Distributor,M
 3280,18-25,Tier 2,Moderate,0.3458,2.9,Direct,M
 3281,46-55,Tier 2,Aggressive,0.1134,6.0,Online,M
-3282,18-25,Tier 1,Conservative,0.2252,4.4,Distributor,None
+3282,18-25,Tier 1,Conservative,0.2252,4.4,Distributor,
 3283,26-35,Tier 2,Conservative,0.3972,1.7,Distributor,M
 3284,46-55,Tier 1,Conservative,1.0447,3.9,Distributor,F
 3285,36-45,Tier 1,Conservative,0.3125,3.3,Online,F
@@ -3327,7 +3327,7 @@ investor_id,age_group,city_tier,risk_appetite,investment_cr,tenure_years,channel
 3326,18-25,Tier 1,Conservative,0.0801,0.8,Distributor,M
 3327,18-25,Tier 3,Aggressive,0.3943,0.5,Online,M
 3328,46-55,Tier 2,Moderate,0.1433,1.6,Bank,M
-3329,55+,Tier 1,Aggressive,0.5869,1.7,Direct,None
+3329,55+,Tier 1,Aggressive,0.5869,1.7,Direct,
 3330,46-55,Tier 1,Aggressive,0.0304,0.4,Online,M
 3331,36-45,Tier 1,Moderate,0.1733,13.8,Online,M
 3332,26-35,Tier 1,Moderate,0.2809,2.5,Distributor,M
@@ -3360,7 +3360,7 @@ investor_id,age_group,city_tier,risk_appetite,investment_cr,tenure_years,channel
 3359,18-25,Tier 3,Moderate,0.2323,5.9,Direct,M
 3360,55+,Tier 1,Conservative,0.4644,1.4,Online,M
 3361,55+,Tier 3,Aggressive,0.6535,1.3,Distributor,F
-3362,46-55,Tier 2,Aggressive,0.0874,3.1,Online,None
+3362,46-55,Tier 2,Aggressive,0.0874,3.1,Online,
 3363,46-55,Tier 2,Conservative,1.6867,0.2,Online,F
 3364,55+,Tier 2,Moderate,0.1084,0.2,Bank,F
 3365,26-35,Tier 3,Moderate,0.2977,1.0,Online,M
@@ -3391,7 +3391,7 @@ investor_id,age_group,city_tier,risk_appetite,investment_cr,tenure_years,channel
 3390,46-55,Tier 3,Moderate,0.2294,1.3,Distributor,F
 3391,26-35,Tier 1,Moderate,0.2816,4.9,Direct,F
 3392,46-55,Tier 1,Aggressive,0.7564,4.2,Bank,M
-3393,46-55,Tier 1,Aggressive,0.0387,1.0,Bank,None
+3393,46-55,Tier 1,Aggressive,0.0387,1.0,Bank,
 3394,46-55,Tier 2,Aggressive,0.9789,2.9,Online,M
 3395,36-45,Tier 1,Moderate,0.0315,6.3,Distributor,M
 3396,55+,Tier 2,Moderate,0.0117,1.2,Bank,F
@@ -3453,7 +3453,7 @@ investor_id,age_group,city_tier,risk_appetite,investment_cr,tenure_years,channel
 3452,26-35,Tier 1,Moderate,0.0328,0.1,Direct,M
 3453,55+,Tier 1,Aggressive,0.1069,5.0,Online,M
 3454,46-55,Tier 1,Aggressive,0.0587,0.7,Online,F
-3455,36-45,Tier 1,Moderate,0.8391,12.8,Direct,None
+3455,36-45,Tier 1,Moderate,0.8391,12.8,Direct,
 3456,46-55,Tier 1,Conservative,0.0887,1.7,Bank,M
 3457,26-35,Tier 3,Aggressive,0.1511,0.4,Online,M
 3458,18-25,Tier 1,Conservative,0.0331,0.8,Bank,M
@@ -3506,7 +3506,7 @@ investor_id,age_group,city_tier,risk_appetite,investment_cr,tenure_years,channel
 3505,55+,Tier 1,Moderate,3.4565,3.9,Direct,M
 3506,26-35,Tier 2,Moderate,0.5078,1.6,Distributor,M
 3507,46-55,Tier 1,Moderate,0.2903,0.2,Bank,M
-3508,18-25,Tier 2,Aggressive,0.1743,6.5,Direct,None
+3508,18-25,Tier 2,Aggressive,0.1743,6.5,Direct,
 3509,55+,Tier 1,Aggressive,0.269,2.8,Bank,F
 3510,55+,Tier 3,Conservative,1.1506,5.1,Online,F
 3511,46-55,Tier 1,Aggressive,0.0978,1.4,Bank,F
@@ -3545,7 +3545,7 @@ investor_id,age_group,city_tier,risk_appetite,investment_cr,tenure_years,channel
 3544,36-45,Tier 2,Moderate,0.2758,5.9,Online,M
 3545,36-45,Tier 3,Moderate,1.6019,0.9,Distributor,F
 3546,55+,Tier 2,Moderate,0.1375,0.6,Direct,M
-3547,26-35,Tier 1,Aggressive,0.1613,1.0,Bank,None
+3547,26-35,Tier 1,Aggressive,0.1613,1.0,Bank,
 3548,26-35,Tier 3,Moderate,0.6431,4.9,Distributor,M
 3549,46-55,Tier 3,Moderate,0.124,2.4,Online,M
 3550,26-35,Tier 1,Moderate,0.7396,1.5,Bank,F
@@ -3603,12 +3603,12 @@ investor_id,age_group,city_tier,risk_appetite,investment_cr,tenure_years,channel
 3602,26-35,Tier 3,Conservative,0.0784,3.5,Online,M
 3603,36-45,Tier 1,Aggressive,0.3527,2.3,Direct,M
 3604,18-25,Tier 3,Conservative,0.3804,6.4,Bank,M
-3605,36-45,Tier 3,Conservative,0.4923,1.4,Online,None
+3605,36-45,Tier 3,Conservative,0.4923,1.4,Online,
 3606,46-55,Tier 2,Conservative,1.0262,1.9,Bank,F
 3607,46-55,Tier 2,Moderate,1.8051,0.0,Bank,M
 3608,55+,Tier 1,Moderate,0.4258,4.1,Online,M
 3609,55+,Tier 1,Moderate,0.2739,13.1,Online,M
-3610,46-55,Tier 1,Conservative,0.2475,2.4,Bank,None
+3610,46-55,Tier 1,Conservative,0.2475,2.4,Bank,
 3611,46-55,Tier 1,Conservative,0.5471,0.7,Distributor,M
 3612,36-45,Tier 1,Aggressive,0.4285,0.9,Direct,M
 3613,26-35,Tier 2,Moderate,0.1871,0.6,Direct,F
@@ -3660,7 +3660,7 @@ investor_id,age_group,city_tier,risk_appetite,investment_cr,tenure_years,channel
 3659,46-55,Tier 2,Moderate,0.568,3.9,Bank,M
 3660,36-45,Tier 2,Moderate,0.2844,3.7,Bank,F
 3661,26-35,Tier 1,Conservative,0.9336,2.6,Direct,F
-3662,26-35,Tier 3,Conservative,0.2495,0.1,Bank,None
+3662,26-35,Tier 3,Conservative,0.2495,0.1,Bank,
 3663,55+,Tier 3,Moderate,0.7581,0.4,Distributor,M
 3664,55+,Tier 2,Moderate,0.7038,3.7,Direct,F
 3665,36-45,Tier 1,Conservative,0.5234,3.1,Distributor,M
@@ -3703,7 +3703,7 @@ investor_id,age_group,city_tier,risk_appetite,investment_cr,tenure_years,channel
 3702,18-25,Tier 3,Moderate,0.6165,1.0,Online,M
 3703,26-35,Tier 2,Aggressive,0.4956,1.2,Direct,M
 3704,18-25,Tier 2,Conservative,0.2072,0.6,Online,M
-3705,55+,Tier 1,Aggressive,0.0893,2.0,Bank,None
+3705,55+,Tier 1,Aggressive,0.0893,2.0,Bank,
 3706,26-35,Tier 2,Aggressive,1.2897,3.0,Direct,M
 3707,26-35,Tier 1,Moderate,0.5342,1.5,Bank,M
 3708,18-25,Tier 2,Moderate,0.1939,0.4,Direct,M
@@ -3719,7 +3719,7 @@ investor_id,age_group,city_tier,risk_appetite,investment_cr,tenure_years,channel
 3718,46-55,Tier 3,Conservative,0.5431,2.0,Online,F
 3719,18-25,Tier 2,Conservative,0.0539,5.4,Direct,M
 3720,36-45,Tier 1,Moderate,0.4012,1.3,Distributor,M
-3721,18-25,Tier 1,Aggressive,0.3432,3.0,Direct,None
+3721,18-25,Tier 1,Aggressive,0.3432,3.0,Direct,
 3722,26-35,Tier 3,Aggressive,1.1418,0.7,Direct,M
 3723,55+,Tier 1,Conservative,0.0736,1.2,Online,F
 3724,36-45,Tier 3,Aggressive,1.1249,0.2,Distributor,M
@@ -3792,7 +3792,7 @@ investor_id,age_group,city_tier,risk_appetite,investment_cr,tenure_years,channel
 3791,55+,Tier 1,Moderate,0.7008,0.8,Bank,F
 3792,18-25,Tier 1,Moderate,0.4737,4.9,Distributor,F
 3793,55+,Tier 2,Moderate,0.9756,0.6,Direct,F
-3794,18-25,Tier 3,Moderate,0.3049,0.7,Online,None
+3794,18-25,Tier 3,Moderate,0.3049,0.7,Online,
 3795,36-45,Tier 2,Conservative,0.0845,0.6,Bank,M
 3796,46-55,Tier 3,Moderate,1.2498,1.8,Distributor,M
 3797,46-55,Tier 2,Moderate,1.0119,2.4,Distributor,F
@@ -3912,21 +3912,21 @@ investor_id,age_group,city_tier,risk_appetite,investment_cr,tenure_years,channel
 3911,26-35,Tier 2,Conservative,0.3133,1.4,Direct,F
 3912,36-45,Tier 1,Aggressive,0.4924,6.1,Bank,M
 3913,26-35,Tier 2,Conservative,0.1153,1.7,Online,M
-3914,46-55,Tier 1,Moderate,0.0272,2.6,Online,None
+3914,46-55,Tier 1,Moderate,0.0272,2.6,Online,
 3915,18-25,Tier 1,Conservative,0.6035,1.3,Direct,M
 3916,55+,Tier 2,Moderate,0.8288,5.2,Distributor,M
-3917,55+,Tier 2,Moderate,0.9987,6.9,Online,None
+3917,55+,Tier 2,Moderate,0.9987,6.9,Online,
 3918,36-45,Tier 3,Aggressive,1.8665,0.6,Direct,F
 3919,55+,Tier 1,Aggressive,0.5784,0.8,Online,F
 3920,26-35,Tier 3,Moderate,0.3239,8.0,Bank,M
-3921,46-55,Tier 3,Aggressive,1.2298,0.4,Direct,None
+3921,46-55,Tier 3,Aggressive,1.2298,0.4,Direct,
 3922,46-55,Tier 1,Conservative,0.188,1.9,Online,M
 3923,36-45,Tier 1,Moderate,0.1936,0.4,Distributor,F
 3924,55+,Tier 3,Moderate,0.2981,1.9,Bank,M
 3925,36-45,Tier 1,Moderate,0.0981,1.5,Online,F
 3926,18-25,Tier 2,Moderate,0.4304,7.4,Direct,M
 3927,26-35,Tier 2,Aggressive,0.2371,1.4,Direct,M
-3928,46-55,Tier 2,Aggressive,0.6203,0.4,Direct,None
+3928,46-55,Tier 2,Aggressive,0.6203,0.4,Direct,
 3929,26-35,Tier 1,Aggressive,0.1915,0.8,Online,F
 3930,46-55,Tier 1,Moderate,0.012,0.6,Distributor,M
 3931,36-45,Tier 1,Moderate,0.073,3.2,Direct,M
@@ -3956,7 +3956,7 @@ investor_id,age_group,city_tier,risk_appetite,investment_cr,tenure_years,channel
 3955,55+,Tier 2,Aggressive,0.2605,1.1,Distributor,M
 3956,18-25,Tier 1,Moderate,0.4582,2.9,Direct,M
 3957,55+,Tier 3,Moderate,0.1618,6.3,Online,M
-3958,18-25,Tier 1,Aggressive,0.4261,2.9,Online,None
+3958,18-25,Tier 1,Aggressive,0.4261,2.9,Online,
 3959,18-25,Tier 1,Aggressive,1.284,0.3,Bank,M
 3960,26-35,Tier 2,Aggressive,0.0025,4.6,Bank,M
 3961,55+,Tier 2,Moderate,0.0714,5.6,Direct,M
@@ -4156,7 +4156,7 @@ investor_id,age_group,city_tier,risk_appetite,investment_cr,tenure_years,channel
 4155,26-35,Tier 3,Moderate,2.0813,9.7,Distributor,F
 4156,18-25,Tier 3,Aggressive,1.029,0.0,Distributor,F
 4157,46-55,Tier 2,Conservative,0.037,0.1,Online,F
-4158,36-45,Tier 2,Aggressive,0.1819,2.4,Direct,None
+4158,36-45,Tier 2,Aggressive,0.1819,2.4,Direct,
 4159,55+,Tier 2,Conservative,0.2581,2.8,Online,F
 4160,36-45,Tier 2,Moderate,0.1639,0.4,Bank,M
 4161,36-45,Tier 2,Conservative,2.7986,1.1,Direct,F
@@ -4185,7 +4185,7 @@ investor_id,age_group,city_tier,risk_appetite,investment_cr,tenure_years,channel
 4184,18-25,Tier 3,Conservative,0.0323,1.5,Bank,M
 4185,18-25,Tier 1,Aggressive,0.0829,1.9,Online,M
 4186,55+,Tier 2,Moderate,0.9108,1.1,Direct,F
-4187,46-55,Tier 1,Moderate,0.14,2.4,Online,None
+4187,46-55,Tier 1,Moderate,0.14,2.4,Online,
 4188,36-45,Tier 3,Conservative,0.4851,4.5,Distributor,F
 4189,46-55,Tier 1,Aggressive,1.5867,0.6,Direct,M
 4190,36-45,Tier 1,Moderate,0.8665,0.5,Direct,M
@@ -4219,7 +4219,7 @@ investor_id,age_group,city_tier,risk_appetite,investment_cr,tenure_years,channel
 4218,55+,Tier 1,Aggressive,0.1242,3.9,Online,M
 4219,36-45,Tier 2,Aggressive,0.0686,0.1,Online,F
 4220,26-35,Tier 3,Moderate,0.1916,3.5,Direct,F
-4221,55+,Tier 1,Conservative,1.5313,5.8,Online,None
+4221,55+,Tier 1,Conservative,1.5313,5.8,Online,
 4222,18-25,Tier 1,Conservative,0.793,4.9,Bank,M
 4223,26-35,Tier 1,Aggressive,0.3905,2.5,Online,M
 4224,36-45,Tier 2,Aggressive,0.0877,1.7,Distributor,M
@@ -4319,7 +4319,7 @@ investor_id,age_group,city_tier,risk_appetite,investment_cr,tenure_years,channel
 4318,36-45,Tier 2,Aggressive,0.862,8.9,Bank,M
 4319,55+,Tier 1,Moderate,0.0148,0.8,Online,F
 4320,55+,Tier 1,Moderate,0.5743,0.1,Direct,F
-4321,36-45,Tier 1,Aggressive,0.0183,1.0,Direct,None
+4321,36-45,Tier 1,Aggressive,0.0183,1.0,Direct,
 4322,36-45,Tier 1,Moderate,1.1496,2.2,Online,M
 4323,46-55,Tier 2,Moderate,1.204,3.6,Direct,M
 4324,46-55,Tier 1,Aggressive,0.1495,3.1,Bank,F
@@ -4362,7 +4362,7 @@ investor_id,age_group,city_tier,risk_appetite,investment_cr,tenure_years,channel
 4361,18-25,Tier 1,Conservative,0.054,3.4,Distributor,M
 4362,46-55,Tier 1,Moderate,0.5208,5.5,Direct,F
 4363,46-55,Tier 2,Conservative,0.1416,8.4,Online,M
-4364,46-55,Tier 3,Moderate,0.423,2.0,Bank,None
+4364,46-55,Tier 3,Moderate,0.423,2.0,Bank,
 4365,18-25,Tier 1,Moderate,0.0969,1.1,Distributor,F
 4366,46-55,Tier 2,Conservative,0.0281,0.1,Distributor,M
 4367,46-55,Tier 3,Conservative,0.0089,2.1,Direct,M
@@ -4414,7 +4414,7 @@ investor_id,age_group,city_tier,risk_appetite,investment_cr,tenure_years,channel
 4413,36-45,Tier 3,Aggressive,0.667,12.0,Bank,M
 4414,36-45,Tier 1,Conservative,0.5047,0.6,Distributor,M
 4415,46-55,Tier 1,Aggressive,0.5145,1.5,Distributor,F
-4416,26-35,Tier 2,Moderate,0.0,1.1,Direct,None
+4416,26-35,Tier 2,Moderate,0.0,1.1,Direct,
 4417,26-35,Tier 2,Conservative,0.5706,2.2,Direct,M
 4418,36-45,Tier 1,Moderate,0.5847,5.0,Bank,M
 4419,36-45,Tier 3,Conservative,0.1979,3.9,Bank,M
@@ -4551,7 +4551,7 @@ investor_id,age_group,city_tier,risk_appetite,investment_cr,tenure_years,channel
 4550,18-25,Tier 2,Moderate,0.9529,2.7,Distributor,M
 4551,55+,Tier 2,Conservative,0.3669,1.1,Direct,F
 4552,46-55,Tier 3,Moderate,0.2866,0.8,Direct,M
-4553,26-35,Tier 1,Aggressive,0.3718,1.7,Direct,None
+4553,26-35,Tier 1,Aggressive,0.3718,1.7,Direct,
 4554,18-25,Tier 3,Conservative,2.0318,4.4,Online,M
 4555,26-35,Tier 1,Moderate,0.795,1.7,Online,M
 4556,55+,Tier 1,Aggressive,0.5387,3.2,Bank,F
@@ -4567,14 +4567,14 @@ investor_id,age_group,city_tier,risk_appetite,investment_cr,tenure_years,channel
 4566,46-55,Tier 1,Conservative,0.504,1.9,Distributor,F
 4567,18-25,Tier 2,Moderate,0.2737,2.3,Online,F
 4568,36-45,Tier 3,Moderate,0.2948,8.4,Bank,F
-4569,55+,Tier 1,Moderate,0.3587,1.2,Distributor,None
+4569,55+,Tier 1,Moderate,0.3587,1.2,Distributor,
 4570,26-35,Tier 1,Conservative,0.2637,3.5,Bank,M
 4571,55+,Tier 1,Moderate,0.3029,3.3,Direct,F
 4572,46-55,Tier 3,Moderate,0.3372,4.8,Distributor,F
 4573,46-55,Tier 2,Moderate,0.7211,1.0,Distributor,M
 4574,55+,Tier 2,Moderate,0.7842,2.9,Bank,M
-4575,46-55,Tier 1,Aggressive,0.3066,7.6,Bank,None
-4576,18-25,Tier 1,Conservative,0.157,0.4,Distributor,None
+4575,46-55,Tier 1,Aggressive,0.3066,7.6,Bank,
+4576,18-25,Tier 1,Conservative,0.157,0.4,Distributor,
 4577,26-35,Tier 1,Moderate,0.431,0.2,Bank,M
 4578,55+,Tier 2,Moderate,1.112,0.5,Bank,M
 4579,26-35,Tier 1,Moderate,0.1068,3.1,Distributor,M
@@ -4625,7 +4625,7 @@ investor_id,age_group,city_tier,risk_appetite,investment_cr,tenure_years,channel
 4624,26-35,Tier 1,Conservative,0.4067,1.3,Online,M
 4625,18-25,Tier 3,Moderate,1.4357,4.6,Bank,M
 4626,55+,Tier 1,Moderate,0.6155,0.8,Direct,F
-4627,46-55,Tier 2,Moderate,0.9978,5.9,Online,None
+4627,46-55,Tier 2,Moderate,0.9978,5.9,Online,
 4628,36-45,Tier 2,Aggressive,0.4955,4.3,Online,M
 4629,18-25,Tier 1,Conservative,0.225,0.2,Distributor,M
 4630,26-35,Tier 1,Conservative,0.0548,5.9,Online,M
@@ -4687,7 +4687,7 @@ investor_id,age_group,city_tier,risk_appetite,investment_cr,tenure_years,channel
 4686,26-35,Tier 1,Moderate,1.0862,0.5,Direct,F
 4687,26-35,Tier 1,Moderate,0.6419,1.8,Bank,M
 4688,46-55,Tier 3,Moderate,0.4651,8.1,Online,M
-4689,46-55,Tier 3,Moderate,0.8998,1.9,Bank,None
+4689,46-55,Tier 3,Moderate,0.8998,1.9,Bank,
 4690,46-55,Tier 2,Conservative,0.1135,2.2,Online,M
 4691,36-45,Tier 1,Conservative,0.3316,1.4,Bank,F
 4692,26-35,Tier 2,Moderate,0.3394,1.9,Bank,F
@@ -4712,7 +4712,7 @@ investor_id,age_group,city_tier,risk_appetite,investment_cr,tenure_years,channel
 4711,18-25,Tier 3,Aggressive,1.0612,2.1,Bank,F
 4712,55+,Tier 3,Moderate,0.1361,11.8,Online,F
 4713,55+,Tier 3,Moderate,0.0596,0.2,Distributor,M
-4714,26-35,Tier 1,Aggressive,0.1103,2.8,Direct,None
+4714,26-35,Tier 1,Aggressive,0.1103,2.8,Direct,
 4715,46-55,Tier 1,Conservative,0.2741,4.6,Direct,M
 4716,18-25,Tier 1,Aggressive,0.3377,1.9,Distributor,M
 4717,46-55,Tier 1,Conservative,0.1041,0.9,Direct,F
@@ -4746,7 +4746,7 @@ investor_id,age_group,city_tier,risk_appetite,investment_cr,tenure_years,channel
 4745,55+,Tier 2,Conservative,0.3636,2.6,Distributor,F
 4746,18-25,Tier 1,Moderate,0.0166,5.6,Direct,M
 4747,55+,Tier 3,Aggressive,0.1822,3.4,Direct,M
-4748,26-35,Tier 1,Aggressive,0.5044,0.8,Distributor,None
+4748,26-35,Tier 1,Aggressive,0.5044,0.8,Distributor,
 4749,18-25,Tier 1,Aggressive,0.815,0.8,Direct,M
 4750,26-35,Tier 2,Conservative,0.994,0.9,Distributor,F
 4751,46-55,Tier 3,Aggressive,0.389,3.3,Bank,M
@@ -4938,7 +4938,7 @@ investor_id,age_group,city_tier,risk_appetite,investment_cr,tenure_years,channel
 4937,36-45,Tier 1,Conservative,0.1638,4.7,Distributor,F
 4938,55+,Tier 1,Aggressive,0.0808,2.3,Direct,F
 4939,46-55,Tier 1,Moderate,0.1108,5.4,Distributor,M
-4940,46-55,Tier 1,Moderate,0.1685,1.5,Bank,None
+4940,46-55,Tier 1,Moderate,0.1685,1.5,Bank,
 4941,46-55,Tier 2,Aggressive,0.5679,0.0,Distributor,M
 4942,18-25,Tier 2,Aggressive,1.0627,3.9,Online,F
 4943,26-35,Tier 3,Aggressive,0.6244,0.2,Direct,M
@@ -4995,7 +4995,7 @@ investor_id,age_group,city_tier,risk_appetite,investment_cr,tenure_years,channel
 4994,46-55,Tier 1,Conservative,1.7859,0.4,Distributor,M
 4995,46-55,Tier 1,Aggressive,0.1711,0.7,Direct,F
 4996,26-35,Tier 1,Conservative,0.124,0.6,Direct,M
-4997,55+,Tier 1,Moderate,0.8541,3.8,Online,None
+4997,55+,Tier 1,Moderate,0.8541,3.8,Online,
 4998,55+,Tier 2,Aggressive,0.4767,3.3,Distributor,M
 4999,36-45,Tier 1,Moderate,0.3453,0.8,Bank,F
 5000,55+,Tier 2,Moderate,1.8835,2.5,Direct,M

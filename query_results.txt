@@ -1,0 +1,137 @@
+SQL QUERY RESULTS
+Run: 2026-06-17 23:10:22.861915
+=================================================================
+  Query error: (sqlite3.OperationalError) no such column: fund_house
+[SQL: 
+        SELECT fund_house,
+               ROUND(SUM(aum_crore),0)                    AS total_aum_crore,
+               ROUND(SUM(aum_crore)/1e5, 2)               AS aum_lakh_crore,
+               COUNT(DISTINCT fund_house)                  AS entries
+        FROM fact_aum
+        GROUP BY fund_house
+        ORDER BY total_aum_crore DESC
+        LIMIT 5
+    ]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+
+Q2 — Avg monthly NAV for HDFC Top 100 (2024-2025)
+Empty DataFrame
+Columns: [month, avg_nav, min_nav, max_nav]
+Index: []
+  Query error: (sqlite3.OperationalError) no such column: sip_inflow_crore
+[SQL: 
+        SELECT SUBSTR(month,1,4)               AS year,
+               ROUND(SUM(sip_inflow_crore),0)  AS total_sip_crore,
+               ROUND(AVG(yoy_growth_pct),1)    AS avg_yoy_pct
+        FROM fact_sip_industry
+        GROUP BY year
+        ORDER BY year
+    ]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+
+Q4 — Transaction amount by state (top 10)
+         state city_tier  num_transactions  unique_investors  total_invested_crore
+Madhya Pradesh       B30              2516               435                 20.45
+        Punjab       T30              2513               437                 20.43
+       Gujarat       T30              2365               427                 19.93
+    Tamil Nadu       B30              2326               420                 19.61
+     Telangana       T30              2328               408                 19.30
+     Rajasthan       B30              2171               405                 19.20
+         Delhi       T30              2283               417                 19.18
+ Uttar Pradesh       B30              2291               415                 18.31
+       Haryana       T30              2346               397                 18.15
+   Maharashtra       T30              2151               382                 18.07
+  Query error: (sqlite3.OperationalError) no such column: f.expense_ratio_pct
+[SQL: 
+        SELECT f.amfi_code, f.scheme_name, f.fund_house,
+               f.category, f.expense_ratio_pct,
+               p.sharpe_ratio, p.return_3yr_pct
+        FROM dim_fund f
+        LEFT JOIN fact_performance p ON f.amfi_code = p.amfi_code
+        WHERE f.expense_ratio_pct < 1.0
+        ORDER BY f.expense_ratio_pct ASC
+        LIMIT 10
+    ]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+
+Q6 — Top 3 funds per category by 3yr CAGR
+Empty DataFrame
+Columns: [category, scheme_name, fund_house, return_3yr_pct, sharpe_ratio]
+Index: []
+
+Q7 — SIP vs Lumpsum by age group
+age_group transaction_type  count  total_crore  avg_amount_inr
+    18-25          Lumpsum   1205        30.77        255328.0
+    18-25       Redemption    762        19.17        251533.0
+    18-25              SIP   2949         3.23         10953.0
+    26-35          Lumpsum   3372        86.23        255719.0
+    26-35       Redemption   2028        50.07        246908.0
+    26-35              SIP   8063         8.86         10987.0
+    36-45          Lumpsum   1976        49.89        252479.0
+    36-45       Redemption   1244        31.91        256532.0
+    36-45              SIP   4926         5.36         10886.0
+    46-55          Lumpsum    924        23.85        258081.0
+    46-55       Redemption    555        14.13        254641.0
+    46-55              SIP   2300         2.56         11137.0
+      56+          Lumpsum    618        15.25        246768.0
+      56+       Redemption    378         9.17        242531.0
+      56+              SIP   1478         1.71         11575.0
+
+Q8 — NAV return volatility by category
+         category  avg_abs_return_pct  max_swing_pct  num_funds
+           Hybrid              0.8472         4.9135          9
+            Other              0.8334         6.4129          9
+             Debt              0.8267         4.8059         10
+Solution Oriented              0.8137         4.8820         12
+           Equity              0.8119         5.5685         12
+  Query error: (sqlite3.OperationalError) no such column: stock_symbol
+[SQL: 
+        SELECT stock_symbol, sector,
+               COUNT(DISTINCT amfi_code)       AS held_by_n_funds,
+               ROUND(AVG(weight_pct),4)        AS avg_weight_pct,
+               ROUND(MAX(weight_pct),4)        AS max_weight_pct
+        FROM fact_portfolio
+        GROUP BY stock_symbol, sector
+        ORDER BY held_by_n_funds DESC, avg_weight_pct DESC
+        LIMIT 10
+    ]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+  Query error: (sqlite3.OperationalError) no such column: f.expense_ratio_pct
+[SQL: 
+        WITH base AS (
+            SELECT p.amfi_code, f.scheme_name, f.fund_house, f.category,
+                   p.return_3yr_pct, p.sharpe_ratio, p.alpha,
+                   f.expense_ratio_pct, p.max_drawdown_pct
+            FROM fact_performance p
+            JOIN dim_fund f ON p.amfi_code = f.amfi_code
+            WHERE p.return_3yr_pct IS NOT NULL
+        ),
+        minmax AS (
+            SELECT
+                MIN(return_3yr_pct) AS min_r, MAX(return_3yr_pct) AS max_r,
+                MIN(sharpe_ratio)   AS min_s, MAX(sharpe_ratio)   AS max_s,
+                MIN(alpha)          AS min_a, MAX(alpha)           AS max_a,
+                MIN(expense_ratio_pct) AS min_e, MAX(expense_ratio_pct) AS max_e,
+                MIN(max_drawdown_pct)  AS min_d, MAX(max_drawdown_pct)  AS max_d
+            FROM base
+        )
+        SELECT b.amfi_code, b.scheme_name, b.fund_house, b.category,
+               ROUND(b.return_3yr_pct, 2)   AS return_3yr,
+               ROUND(b.sharpe_ratio, 3)     AS sharpe,
+               ROUND(
+                   CASE WHEN (m.max_r - m.min_r) > 0
+                        THEN ((b.return_3yr_pct - m.min_r)/(m.max_r - m.min_r)) * 30 ELSE 0 END
+                 + CASE WHEN (m.max_s - m.min_s) > 0
+                        THEN ((b.sharpe_ratio - m.min_s)/(m.max_s - m.min_s)) * 25 ELSE 0 END
+                 + CASE WHEN (m.max_a - m.min_a) > 0
+                        THEN ((b.alpha - m.min_a)/(m.max_a - m.min_a)) * 20 ELSE 0 END
+                 + CASE WHEN (m.max_e - m.min_e) > 0
+                        THEN (1 - (b.expense_ratio_pct - m.min_e)/(m.max_e - m.min_e)) * 15 ELSE 0 END
+                 + CASE WHEN (m.max_d - m.min_d) > 0
+                        THEN (1 - (b.max_drawdown_pct - m.min_d)/(m.max_d - m.min_d)) * 10 ELSE 0 END,
+               2)  AS composite_score
+        FROM base b, minmax m
+        ORDER BY composite_score DESC
+        LIMIT 10
+    ]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)

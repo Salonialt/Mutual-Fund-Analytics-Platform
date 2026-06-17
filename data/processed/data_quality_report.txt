@@ -1,9 +1,9 @@
 DATA QUALITY REPORT
-Generated: 2026-06-03 01:37:56
+Generated: 2026-06-17 23:10:21
 ======================================================================
 
 DATASET: fund_master
-  Source  : Synthetic (generated)
+  Source  : CSV (provided)
   Shape   : 200 rows × 11 columns
   Columns : amfi_code, scheme_name, fund_house, category, sub_category, risk_grade, launch_date, benchmark, aum_crores, exit_load_pct, lock_in_days
   Anomalies:
@@ -11,21 +11,21 @@ DATASET: fund_master
   ⚠  3 duplicate amfi_code values
 
 DATASET: nav_history
-  Source  : Synthetic (generated)
+  Source  : CSV (provided)
   Shape   : 13,050 rows × 4 columns
   Columns : amfi_code, nav_date, nav, change_pct
   Anomalies:
   ⚠  13000 duplicate amfi_code values
 
 DATASET: fund_returns
-  Source  : Synthetic (generated)
+  Source  : CSV (provided)
   Shape   : 197 rows × 11 columns
   Columns : amfi_code, return_1m, return_3m, return_6m, return_1y, return_3y, return_5y, alpha, beta, sharpe_ratio, std_deviation
   Anomalies:
   ✓  No critical anomalies detected
 
 DATASET: portfolio_holdings
-  Source  : Synthetic (generated)
+  Source  : CSV (provided)
   Shape   : 556 rows × 4 columns
   Columns : amfi_code, stock_name, weight_pct, sector
   Anomalies:
@@ -33,7 +33,7 @@ DATASET: portfolio_holdings
   ⚠  526 duplicate amfi_code values
 
 DATASET: aum_data
-  Source  : Synthetic (generated)
+  Source  : CSV (provided)
   Shape   : 3,546 rows × 4 columns
   Columns : amfi_code, month, aum_crores, folio_count
   Anomalies:
@@ -41,21 +41,21 @@ DATASET: aum_data
   ⚠  3349 duplicate amfi_code values
 
 DATASET: expense_ratios
-  Source  : Synthetic (generated)
+  Source  : CSV (provided)
   Shape   : 197 rows × 5 columns
   Columns : amfi_code, expense_ratio_direct, expense_ratio_regular, tter, as_of_date
   Anomalies:
   ✓  No critical anomalies detected
 
 DATASET: benchmark_index
-  Source  : Synthetic (generated)
+  Source  : CSV (provided)
   Shape   : 1,566 rows × 4 columns
   Columns : index_name, date, close_value, daily_return
   Anomalies:
   ✓  No critical anomalies detected
 
 DATASET: sip_data
-  Source  : Synthetic (generated)
+  Source  : CSV (provided)
   Shape   : 1,440 rows × 5 columns
   Columns : amfi_code, month, sip_inflows_cr, sip_registrations, sip_cancellations
   Anomalies:
@@ -63,7 +63,7 @@ DATASET: sip_data
   ⚠  1360 duplicate amfi_code values
 
 DATASET: redemption_data
-  Source  : Synthetic (generated)
+  Source  : CSV (provided)
   Shape   : 1,440 rows × 5 columns
   Columns : amfi_code, month, redemption_cr, lumpsum_inflow_cr, net_flow_cr
   Anomalies:
@@ -72,7 +72,7 @@ DATASET: redemption_data
   ⚠  1360 duplicate amfi_code values
 
 DATASET: investor_demographics
-  Source  : Synthetic (generated)
+  Source  : CSV (provided)
   Shape   : 5,000 rows × 8 columns
   Columns : investor_id, age_group, city_tier, risk_appetite, investment_cr, tenure_years, channel, gender
   Anomalies:

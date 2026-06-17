@@ -1,0 +1,64 @@
+=================================================================
+  DAY 2 — DATA CLEANING
+  2026-06-17 23:10:21
+=================================================================
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  TASK 1 | Cleaning nav_history
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Raw shape       : (13050, 4)
+  Duplicates removed : 0
+  Final shape        : (13050, 5)
+  Date range         : 2024-01-01 to 2024-12-30
+  Unique funds       : 50
+  NAV range          : ₹68.42 – ₹1305.21
+  → Saved clean_nav.csv  (13,050 rows × 5 cols)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  TASK 2 | Cleaning investor_transactions
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Raw shape : (32778, 13)
+  Duplicate rows removed : 0
+  Final shape     : (32778, 13)
+  Date range      : 2024-01-01 – 2025-05-30
+  TX type split   : {'SIP': 19716, 'Lumpsum': 8095, 'Redemption': 4967}
+  KYC Verified    : 30,146 (92.0%)
+  Total invested  : ₹2,277,054,939
+  → Saved clean_transactions.csv  (32,778 rows × 13 cols)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  TASK 3 | Cleaning scheme_performance
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Raw shape : (40, 19)
+  Negative Sharpe ratios : 0 funds
+  Expense ratios out of [0.1%,2.5%] : 0
+  Final shape : (40, 21)
+  Sharpe range: 0.800 – 7.680
+  → Saved clean_performance.csv  (40 rows × 21 cols)
+
+  Cleaning fund_master.csv
+    Rows: 200 → 200
+  → Saved fund_master_cleaned.csv  (200 rows × 11 cols)
+
+  Cleaning aum_data.csv
+    Rows: 3546 → 3546
+  → Saved aum_data_cleaned.csv  (3,546 rows × 4 cols)
+
+  Cleaning sip_data.csv
+    Rows: 1440 → 1440
+  → Saved clean_sip_inflows.csv  (1,440 rows × 5 cols)
+
+  Cleaning 05_category_inflows copy.csv
+    Rows: 144 → 144
+  → Saved category_inflows_cleaned.csv  (144 rows × 3 cols)
+
+  Cleaning 06_industry_folio_count.csv
+    Rows: 21 → 21
+  → Saved folio_count_cleaned.csv  (21 rows × 6 cols)
+
+  Cleaning portfolio_holdings.csv
+    Rows: 556 → 556
+  → Saved portfolio_holdings_cleaned.csv  (556 rows × 4 cols)
+
+  Cleaning benchmark_indexes.csv
+  ⚠  File not found, skipping

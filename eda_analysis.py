@@ -121,7 +121,7 @@ nav = nav.merge(
 
 # --- transactions ---
 tx = pd.read_csv(
-    os.path.join(PROC, "08_investor_transactions copy.csv"),
+    os.path.join(PROC, "clean_transactions.csv"),
     parse_dates=["transaction_date"]
 )
 tx["amfi_code"] = tx["amfi_code"].astype(int)
@@ -158,7 +158,7 @@ ci = ci.merge(
 )
 # --- Folio count ---
 folio = pd.read_csv(
-    os.path.join(PROC, "06_industry_folio_count.csv"),
+    os.path.join(PROC, "folio_count_cleaned.csv"),
     parse_dates=["month"]
 )
 
